@@ -824,6 +824,7 @@ CMakeFiles/client.dir/src/nostr_client.cpp.o: \
  /home/crash/nostr/externals/cereal/include/cereal/details/polymorphic_impl_fwd.hpp \
  /home/crash/nostr/externals/cereal/include/cereal/types/common.hpp \
  /home/crash/nostr/externals/cereal/include/cereal/types/string.hpp \
+ /home/crash/nostr/src/crypto.hpp \
  /home/crash/nostr/externals/cereal/include/cereal/archives/json.hpp \
  /home/crash/nostr/externals/cereal/include/cereal/details/util.hpp \
  /usr/include/c++/11/cxxabi.h \

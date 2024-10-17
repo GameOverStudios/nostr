@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/server.dir/src/crypto.cpp.o"
+  "CMakeFiles/server.dir/src/crypto.cpp.o.d"
   "CMakeFiles/server.dir/src/database.cpp.o"
   "CMakeFiles/server.dir/src/database.cpp.o.d"
   "CMakeFiles/server.dir/src/event.cpp.o"

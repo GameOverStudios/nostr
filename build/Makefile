@@ -142,6 +142,33 @@ client/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
 .PHONY : client/fast
 
+src/crypto.o: src/crypto.cpp.o
+.PHONY : src/crypto.o
+
+# target to build an object file
+src/crypto.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/crypto.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/crypto.cpp.o
+.PHONY : src/crypto.cpp.o
+
+src/crypto.i: src/crypto.cpp.i
+.PHONY : src/crypto.i
+
+# target to preprocess a source file
+src/crypto.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/crypto.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/crypto.cpp.i
+.PHONY : src/crypto.cpp.i
+
+src/crypto.s: src/crypto.cpp.s
+.PHONY : src/crypto.s
+
+# target to generate assembly for a file
+src/crypto.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/crypto.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/crypto.cpp.s
+.PHONY : src/crypto.cpp.s
+
 src/database.o: src/database.cpp.o
 .PHONY : src/database.o
 
@@ -254,6 +281,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... client"
 	@echo "... server"
+	@echo "... src/crypto.o"
+	@echo "... src/crypto.i"
+	@echo "... src/crypto.s"
 	@echo "... src/database.o"
 	@echo "... src/database.i"
 	@echo "... src/database.s"
