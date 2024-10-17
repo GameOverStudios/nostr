@@ -42,3 +42,28 @@ void store_event(sqlite3* db, const Event& event) {
     }
     sqlite3_finalize(stmt);
 }
+
+std::vector<Event> retrieve_events(sqlite3* db) {
+    std::vector<Event> events;
+    std::string sql = "SELECT id, pubkey, content, sig, created_at FROM events;";
+    sqlite3_stmt* stmt;
+    int rc = sqlite3_prepare_v2(db, sql.c_str(), -1, &stmt, nullptr);
+
+    if (rc != SQLITE_OK) {
+        std::cerr << "Erro ao preparar consulta: " << sqlite3_errmsg(db) << std::endl;
+        return events; // Retornar vetor vazio em caso de erro
+    }
+
+    while (sqlite3_step(stmt) == SQLITE_ROW) {
+        Event event;
+        event.id = reinterpret_cast<const char*>(sqlite3_column_text(stmt, 0));
+        event.pubkey = reinterpret_cast<const char*>(sqlite3_column_text(stmt, 1));
+        event.content = reinterpret_cast<const char*>(sqlite3_column_text(stmt, 2));
+        event.sig = reinterpret_cast<const char*>(sqlite3_column_text(stmt, 3));
+        event.created_at = sqlite3_column_int64(stmt, 4);
+        events.push_back(event);
+    }
+
+    sqlite3_finalize(stmt);
+    return events;
+}

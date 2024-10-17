@@ -1,9 +1,11 @@
 #include "event.hpp"
 #include <openssl/sha.h>  // Para SHA256
 #include <random>
+#include <asio.hpp>
 #include <sstream>
 #include <cereal/archives/json.hpp>
 #include <sstream>
+#include "database.hpp" 
 
 // Função para gerar UUIDs únicos
 std::string generate_uuid() {
