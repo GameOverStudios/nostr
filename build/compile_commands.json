@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/crash/nostr/build",
+  "command": "/usr/bin/g++  -I/home/crash/nostr/externals/asio-1.30.2/include -I/home/crash/nostr/externals/openssl-3.3.2/include -I/home/crash/nostr/externals/cereal/include -I/home/crash/nostr/externals/sqlite/libsqlite3 -g -std=gnu++11 -o CMakeFiles/server.dir/src/nostr_server.cpp.o -c /home/crash/nostr/src/nostr_server.cpp",
+  "file": "/home/crash/nostr/src/nostr_server.cpp"
+},
+{
+  "directory": "/home/crash/nostr/build",
+  "command": "/usr/bin/g++  -I/home/crash/nostr/externals/asio-1.30.2/include -I/home/crash/nostr/externals/openssl-3.3.2/include -I/home/crash/nostr/externals/cereal/include -I/home/crash/nostr/externals/sqlite/libsqlite3 -g -std=gnu++11 -o CMakeFiles/server.dir/src/event.cpp.o -c /home/crash/nostr/src/event.cpp",
+  "file": "/home/crash/nostr/src/event.cpp"
+},
+{
+  "directory": "/home/crash/nostr/build",
+  "command": "/usr/bin/g++  -I/home/crash/nostr/externals/asio-1.30.2/include -I/home/crash/nostr/externals/openssl-3.3.2/include -I/home/crash/nostr/externals/cereal/include -I/home/crash/nostr/externals/sqlite/libsqlite3 -g -std=gnu++11 -o CMakeFiles/server.dir/src/database.cpp.o -c /home/crash/nostr/src/database.cpp",
+  "file": "/home/crash/nostr/src/database.cpp"
+},
+{
+  "directory": "/home/crash/nostr/build",
+  "command": "/usr/bin/g++  -I/home/crash/nostr/externals/asio-1.30.2/include -I/home/crash/nostr/externals/openssl-3.3.2/include -I/home/crash/nostr/externals/cereal/include -I/home/crash/nostr/externals/sqlite/libsqlite3 -g -std=gnu++11 -o CMakeFiles/client.dir/src/nostr_client.cpp.o -c /home/crash/nostr/src/nostr_client.cpp",
+  "file": "/home/crash/nostr/src/nostr_client.cpp"
+},
+{
+  "directory": "/home/crash/nostr/build",
+  "command": "/usr/bin/g++  -I/home/crash/nostr/externals/asio-1.30.2/include -I/home/crash/nostr/externals/openssl-3.3.2/include -I/home/crash/nostr/externals/cereal/include -I/home/crash/nostr/externals/sqlite/libsqlite3 -g -std=gnu++11 -o CMakeFiles/client.dir/src/event.cpp.o -c /home/crash/nostr/src/event.cpp",
+  "file": "/home/crash/nostr/src/event.cpp"
+},
+{
+  "directory": "/home/crash/nostr/build",
+  "command": "/usr/bin/g++  -I/home/crash/nostr/externals/asio-1.30.2/include -I/home/crash/nostr/externals/openssl-3.3.2/include -I/home/crash/nostr/externals/cereal/include -I/home/crash/nostr/externals/sqlite/libsqlite3 -g -std=gnu++11 -o CMakeFiles/client.dir/src/database.cpp.o -c /home/crash/nostr/src/database.cpp",
+  "file": "/home/crash/nostr/src/database.cpp"
+}
+]

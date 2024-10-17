@@ -1,0 +1,3 @@
+[submodule "sqlite"]
+	path = externals/sqlite
+	url = https://git.build2.org/packaging/sqlite/sqlite.git 
