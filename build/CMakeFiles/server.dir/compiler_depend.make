@@ -1852,7 +1852,8 @@ CMakeFiles/server.dir/src/event.cpp.o: ../src/event.cpp \
 
 CMakeFiles/server.dir/src/nostr_server.cpp.o: ../src/nostr_server.cpp \
   /usr/include/stdc-predef.h \
-  /usr/include/c++/11/iostream \
+  ../src/event.hpp \
+  /usr/include/c++/11/string \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
   /usr/include/features.h \
@@ -1864,11 +1865,26 @@ CMakeFiles/server.dir/src/nostr_server.cpp.o: ../src/nostr_server.cpp \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
-  /usr/include/c++/11/ostream \
-  /usr/include/c++/11/ios \
-  /usr/include/c++/11/iosfwd \
   /usr/include/c++/11/bits/stringfwd.h \
   /usr/include/c++/11/bits/memoryfwd.h \
+  /usr/include/c++/11/bits/char_traits.h \
+  /usr/include/c++/11/bits/stl_algobase.h \
+  /usr/include/c++/11/bits/functexcept.h \
+  /usr/include/c++/11/bits/exception_defines.h \
+  /usr/include/c++/11/bits/cpp_type_traits.h \
+  /usr/include/c++/11/ext/type_traits.h \
+  /usr/include/c++/11/ext/numeric_traits.h \
+  /usr/include/c++/11/bits/stl_pair.h \
+  /usr/include/c++/11/bits/move.h \
+  /usr/include/c++/11/type_traits \
+  /usr/include/c++/11/bits/stl_iterator_base_types.h \
+  /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/11/bits/concept_check.h \
+  /usr/include/c++/11/debug/assertions.h \
+  /usr/include/c++/11/bits/stl_iterator.h \
+  /usr/include/c++/11/bits/ptr_traits.h \
+  /usr/include/c++/11/debug/debug.h \
+  /usr/include/c++/11/bits/predefined_ops.h \
   /usr/include/c++/11/bits/postypes.h \
   /usr/include/c++/11/cwchar \
   /usr/include/wchar.h \
@@ -1885,32 +1901,6 @@ CMakeFiles/server.dir/src/nostr_server.cpp.o: ../src/nostr_server.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
-  /usr/include/c++/11/exception \
-  /usr/include/c++/11/bits/exception.h \
-  /usr/include/c++/11/bits/exception_ptr.h \
-  /usr/include/c++/11/bits/exception_defines.h \
-  /usr/include/c++/11/bits/cxxabi_init_exception.h \
-  /usr/include/c++/11/typeinfo \
-  /usr/include/c++/11/bits/hash_bytes.h \
-  /usr/include/c++/11/new \
-  /usr/include/c++/11/bits/move.h \
-  /usr/include/c++/11/type_traits \
-  /usr/include/c++/11/bits/nested_exception.h \
-  /usr/include/c++/11/bits/char_traits.h \
-  /usr/include/c++/11/bits/stl_algobase.h \
-  /usr/include/c++/11/bits/functexcept.h \
-  /usr/include/c++/11/bits/cpp_type_traits.h \
-  /usr/include/c++/11/ext/type_traits.h \
-  /usr/include/c++/11/ext/numeric_traits.h \
-  /usr/include/c++/11/bits/stl_pair.h \
-  /usr/include/c++/11/bits/stl_iterator_base_types.h \
-  /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
-  /usr/include/c++/11/bits/concept_check.h \
-  /usr/include/c++/11/debug/assertions.h \
-  /usr/include/c++/11/bits/stl_iterator.h \
-  /usr/include/c++/11/bits/ptr_traits.h \
-  /usr/include/c++/11/debug/debug.h \
-  /usr/include/c++/11/bits/predefined_ops.h \
   /usr/include/c++/11/cstdint \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
   /usr/include/stdint.h \
@@ -1919,16 +1909,28 @@ CMakeFiles/server.dir/src/nostr_server.cpp.o: ../src/nostr_server.cpp \
   /usr/include/x86_64-linux-gnu/bits/time64.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/c++/11/bits/allocator.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
+  /usr/include/c++/11/ext/new_allocator.h \
+  /usr/include/c++/11/new \
+  /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/localefwd.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
   /usr/include/c++/11/clocale \
   /usr/include/locale.h \
   /usr/include/x86_64-linux-gnu/bits/locale.h \
+  /usr/include/c++/11/iosfwd \
   /usr/include/c++/11/cctype \
   /usr/include/ctype.h \
   /usr/include/x86_64-linux-gnu/bits/endian.h \
   /usr/include/x86_64-linux-gnu/bits/endianness.h \
-  /usr/include/c++/11/bits/ios_base.h \
+  /usr/include/c++/11/bits/ostream_insert.h \
+  /usr/include/c++/11/bits/cxxabi_forced.h \
+  /usr/include/c++/11/bits/stl_function.h \
+  /usr/include/c++/11/backward/binders.h \
+  /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/initializer_list \
+  /usr/include/c++/11/bits/basic_string.h \
   /usr/include/c++/11/ext/atomicity.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h \
@@ -1960,18 +1962,6 @@ CMakeFiles/server.dir/src/nostr_server.cpp.o: ../src/nostr_server.cpp \
   /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
-  /usr/include/c++/11/bits/locale_classes.h \
-  /usr/include/c++/11/string \
-  /usr/include/c++/11/bits/allocator.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
-  /usr/include/c++/11/ext/new_allocator.h \
-  /usr/include/c++/11/bits/ostream_insert.h \
-  /usr/include/c++/11/bits/cxxabi_forced.h \
-  /usr/include/c++/11/bits/stl_function.h \
-  /usr/include/c++/11/backward/binders.h \
-  /usr/include/c++/11/bits/range_access.h \
-  /usr/include/c++/11/initializer_list \
-  /usr/include/c++/11/bits/basic_string.h \
   /usr/include/c++/11/ext/alloc_traits.h \
   /usr/include/c++/11/bits/alloc_traits.h \
   /usr/include/c++/11/bits/stl_construct.h \
@@ -2007,26 +1997,8 @@ CMakeFiles/server.dir/src/nostr_server.cpp.o: ../src/nostr_server.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/functional_hash.h \
+  /usr/include/c++/11/bits/hash_bytes.h \
   /usr/include/c++/11/bits/basic_string.tcc \
-  /usr/include/c++/11/bits/locale_classes.tcc \
-  /usr/include/c++/11/system_error \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
-  /usr/include/c++/11/stdexcept \
-  /usr/include/c++/11/streambuf \
-  /usr/include/c++/11/bits/streambuf.tcc \
-  /usr/include/c++/11/bits/basic_ios.h \
-  /usr/include/c++/11/bits/locale_facets.h \
-  /usr/include/c++/11/cwctype \
-  /usr/include/wctype.h \
-  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
-  /usr/include/c++/11/bits/streambuf_iterator.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
-  /usr/include/c++/11/bits/locale_facets.tcc \
-  /usr/include/c++/11/bits/basic_ios.tcc \
-  /usr/include/c++/11/bits/ostream.tcc \
-  /usr/include/c++/11/istream \
-  /usr/include/c++/11/bits/istream.tcc \
   ../externals/asio-1.30.2/include/asio.hpp \
   ../externals/asio-1.30.2/include/asio/any_completion_executor.hpp \
   ../externals/asio-1.30.2/include/asio/detail/config.hpp \
@@ -2053,6 +2025,7 @@ CMakeFiles/server.dir/src/nostr_server.cpp.o: ../src/nostr_server.cpp \
   ../externals/asio-1.30.2/include/asio/traits/query_static_constexpr_member.hpp \
   ../externals/asio-1.30.2/include/asio/traits/static_query.hpp \
   ../externals/asio-1.30.2/include/asio/execution/any_executor.hpp \
+  /usr/include/c++/11/typeinfo \
   ../externals/asio-1.30.2/include/asio/detail/assert.hpp \
   /usr/include/c++/11/cassert \
   /usr/include/assert.h \
@@ -2084,6 +2057,10 @@ CMakeFiles/server.dir/src/nostr_server.cpp.o: ../src/nostr_server.cpp \
   /usr/include/c++/11/bits/refwrap.h \
   /usr/include/c++/11/ext/aligned_buffer.h \
   /usr/include/c++/11/ext/concurrence.h \
+  /usr/include/c++/11/exception \
+  /usr/include/c++/11/bits/exception_ptr.h \
+  /usr/include/c++/11/bits/cxxabi_init_exception.h \
+  /usr/include/c++/11/bits/nested_exception.h \
   /usr/include/c++/11/bits/shared_ptr_atomic.h \
   /usr/include/c++/11/backward/auto_ptr.h \
   ../externals/asio-1.30.2/include/asio/detail/cstdint.hpp \
@@ -2134,6 +2111,9 @@ CMakeFiles/server.dir/src/nostr_server.cpp.o: ../src/nostr_server.cpp \
   ../externals/asio-1.30.2/include/asio/detail/impl/posix_event.ipp \
   ../externals/asio-1.30.2/include/asio/detail/throw_error.hpp \
   ../externals/asio-1.30.2/include/asio/error_code.hpp \
+  /usr/include/c++/11/system_error \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
+  /usr/include/c++/11/stdexcept \
   ../externals/asio-1.30.2/include/asio/impl/error_code.ipp \
   /usr/include/c++/11/cstring \
   /usr/include/string.h \
@@ -2357,6 +2337,12 @@ CMakeFiles/server.dir/src/nostr_server.cpp.o: ../src/nostr_server.cpp \
   ../externals/asio-1.30.2/include/asio/is_contiguous_iterator.hpp \
   /usr/include/c++/11/iterator \
   /usr/include/c++/11/bits/stream_iterator.h \
+  /usr/include/c++/11/bits/streambuf_iterator.h \
+  /usr/include/c++/11/streambuf \
+  /usr/include/c++/11/bits/ios_base.h \
+  /usr/include/c++/11/bits/locale_classes.h \
+  /usr/include/c++/11/bits/locale_classes.tcc \
+  /usr/include/c++/11/bits/streambuf.tcc \
   ../externals/asio-1.30.2/include/asio/detail/is_buffer_sequence.hpp \
   ../externals/asio-1.30.2/include/asio/detail/buffer_sequence_adapter.hpp \
   ../externals/asio-1.30.2/include/asio/registered_buffer.hpp \
@@ -2418,6 +2404,20 @@ CMakeFiles/server.dir/src/nostr_server.cpp.o: ../src/nostr_server.cpp \
   ../externals/asio-1.30.2/include/asio/basic_socket.hpp \
   ../externals/asio-1.30.2/include/asio/basic_socket_acceptor.hpp \
   ../externals/asio-1.30.2/include/asio/basic_socket_iostream.hpp \
+  /usr/include/c++/11/istream \
+  /usr/include/c++/11/ios \
+  /usr/include/c++/11/bits/basic_ios.h \
+  /usr/include/c++/11/bits/locale_facets.h \
+  /usr/include/c++/11/cwctype \
+  /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
+  /usr/include/c++/11/bits/locale_facets.tcc \
+  /usr/include/c++/11/bits/basic_ios.tcc \
+  /usr/include/c++/11/ostream \
+  /usr/include/c++/11/bits/ostream.tcc \
+  /usr/include/c++/11/bits/istream.tcc \
   ../externals/asio-1.30.2/include/asio/basic_socket_streambuf.hpp \
   ../externals/asio-1.30.2/include/asio/basic_stream_socket.hpp \
   ../externals/asio-1.30.2/include/asio/steady_timer.hpp \
@@ -2717,7 +2717,7 @@ CMakeFiles/server.dir/src/nostr_server.cpp.o: ../src/nostr_server.cpp \
   ../externals/asio-1.30.2/include/asio/write.hpp \
   ../externals/asio-1.30.2/include/asio/write_at.hpp \
   ../externals/asio-1.30.2/include/asio/impl/write_at.hpp \
-  ../externals/cereal/include/cereal/archives/json.hpp \
+  ../externals/cereal/include/cereal/types/vector.hpp \
   ../externals/cereal/include/cereal/cereal.hpp \
   /usr/include/c++/11/unordered_map \
   /usr/include/c++/11/bits/hashtable.h \
@@ -2731,12 +2731,15 @@ CMakeFiles/server.dir/src/nostr_server.cpp.o: ../src/nostr_server.cpp \
   ../externals/cereal/include/cereal/details/traits.hpp \
   /usr/include/c++/11/typeindex \
   ../externals/cereal/include/cereal/access.hpp \
+  /usr/include/c++/11/iostream \
   ../externals/cereal/include/cereal/specialize.hpp \
   ../externals/cereal/include/cereal/details/helpers.hpp \
   ../externals/cereal/include/cereal/details/static_object.hpp \
   ../externals/cereal/include/cereal/types/base_class.hpp \
   ../externals/cereal/include/cereal/details/polymorphic_impl_fwd.hpp \
   ../externals/cereal/include/cereal/types/common.hpp \
+  ../externals/cereal/include/cereal/types/string.hpp \
+  ../externals/cereal/include/cereal/archives/json.hpp \
   ../externals/cereal/include/cereal/details/util.hpp \
   /usr/include/c++/11/cxxabi.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/cxxabi_tweaks.h \
@@ -2778,106 +2781,9 @@ CMakeFiles/server.dir/src/nostr_server.cpp.o: ../src/nostr_server.cpp \
   /usr/include/c++/11/bits/stl_deque.h \
   /usr/include/c++/11/bits/deque.tcc \
   /usr/include/c++/11/bits/stl_stack.h \
-  /usr/include/sqlite3.h \
-  ../externals/openssl-3.3.2/include/openssl/pem.h \
-  ../externals/openssl-3.3.2/include/openssl/macros.h \
-  ../externals/openssl-3.3.2/include/openssl/opensslconf.h \
-  ../externals/openssl-3.3.2/include/openssl/configuration.h \
-  ../externals/openssl-3.3.2/include/openssl/opensslv.h \
-  ../externals/openssl-3.3.2/include/openssl/e_os2.h \
-  ../externals/openssl-3.3.2/include/openssl/bio.h \
-  ../externals/openssl-3.3.2/include/openssl/crypto.h \
-  /usr/include/c++/11/stdlib.h \
-  ../externals/openssl-3.3.2/include/openssl/safestack.h \
-  ../externals/openssl-3.3.2/include/openssl/stack.h \
-  ../externals/openssl-3.3.2/include/openssl/types.h \
-  ../externals/openssl-3.3.2/include/openssl/cryptoerr.h \
-  ../externals/openssl-3.3.2/include/openssl/symhacks.h \
-  ../externals/openssl-3.3.2/include/openssl/cryptoerr_legacy.h \
-  ../externals/openssl-3.3.2/include/openssl/core.h \
-  ../externals/openssl-3.3.2/include/openssl/bioerr.h \
-  ../externals/openssl-3.3.2/include/openssl/evp.h \
-  ../externals/openssl-3.3.2/include/openssl/core_dispatch.h \
-  ../externals/openssl-3.3.2/include/openssl/evperr.h \
-  ../externals/openssl-3.3.2/include/openssl/params.h \
-  ../externals/openssl-3.3.2/include/openssl/bn.h \
-  ../externals/openssl-3.3.2/include/openssl/bnerr.h \
-  ../externals/openssl-3.3.2/include/openssl/objects.h \
-  ../externals/openssl-3.3.2/include/openssl/obj_mac.h \
-  ../externals/openssl-3.3.2/include/openssl/asn1.h \
-  ../externals/openssl-3.3.2/include/openssl/asn1err.h \
-  ../externals/openssl-3.3.2/include/openssl/objectserr.h \
-  ../externals/openssl-3.3.2/include/openssl/x509.h \
-  ../externals/openssl-3.3.2/include/openssl/buffer.h \
-  ../externals/openssl-3.3.2/include/openssl/buffererr.h \
-  ../externals/openssl-3.3.2/include/openssl/ec.h \
-  ../externals/openssl-3.3.2/include/openssl/ecerr.h \
-  ../externals/openssl-3.3.2/include/openssl/rsa.h \
-  ../externals/openssl-3.3.2/include/openssl/rsaerr.h \
-  ../externals/openssl-3.3.2/include/openssl/dsa.h \
-  ../externals/openssl-3.3.2/include/openssl/dh.h \
-  ../externals/openssl-3.3.2/include/openssl/dherr.h \
-  ../externals/openssl-3.3.2/include/openssl/dsaerr.h \
-  ../externals/openssl-3.3.2/include/openssl/sha.h \
-  ../externals/openssl-3.3.2/include/openssl/x509err.h \
-  ../externals/openssl-3.3.2/include/openssl/x509_vfy.h \
-  ../externals/openssl-3.3.2/include/openssl/lhash.h \
-  ../externals/openssl-3.3.2/include/openssl/pkcs7.h \
-  ../externals/openssl-3.3.2/include/openssl/pkcs7err.h \
-  ../externals/openssl-3.3.2/include/openssl/http.h \
-  ../externals/openssl-3.3.2/include/openssl/conf.h \
-  ../externals/openssl-3.3.2/include/openssl/conferr.h \
-  ../externals/openssl-3.3.2/include/openssl/conftypes.h \
-  ../externals/openssl-3.3.2/include/openssl/pemerr.h \
-  ../src/event.hpp \
-  ../externals/cereal/include/cereal/types/vector.hpp \
-  ../externals/cereal/include/cereal/types/string.hpp \
-  ../src/database.hpp
+  ../src/database.hpp \
+  /usr/include/sqlite3.h
 
-
-../externals/openssl-3.3.2/include/openssl/conftypes.h:
-
-../externals/openssl-3.3.2/include/openssl/conferr.h:
-
-../externals/openssl-3.3.2/include/openssl/pkcs7err.h:
-
-../externals/openssl-3.3.2/include/openssl/pkcs7.h:
-
-../externals/openssl-3.3.2/include/openssl/lhash.h:
-
-../externals/openssl-3.3.2/include/openssl/x509err.h:
-
-../externals/openssl-3.3.2/include/openssl/dsaerr.h:
-
-../externals/openssl-3.3.2/include/openssl/dherr.h:
-
-../externals/openssl-3.3.2/include/openssl/buffererr.h:
-
-../externals/openssl-3.3.2/include/openssl/buffer.h:
-
-../externals/openssl-3.3.2/include/openssl/objectserr.h:
-
-../externals/openssl-3.3.2/include/openssl/asn1err.h:
-
-../externals/openssl-3.3.2/include/openssl/objects.h:
-
-../externals/openssl-3.3.2/include/openssl/bnerr.h:
-
-../externals/openssl-3.3.2/include/openssl/evp.h:
-
-../externals/openssl-3.3.2/include/openssl/cryptoerr_legacy.h:
-
-../externals/openssl-3.3.2/include/openssl/cryptoerr.h:
-
-../externals/openssl-3.3.2/include/openssl/safestack.h:
-
-/usr/include/c++/11/stdlib.h:
-
-../externals/openssl-3.3.2/include/openssl/crypto.h:
-
-../externals/openssl-3.3.2/include/openssl/bio.h:
-
-../externals/openssl-3.3.2/include/openssl/pem.h:
 
 /usr/include/c++/11/bits/stl_stack.h:
 
@@ -3003,8 +2909,6 @@ CMakeFiles/server.dir/src/nostr_server.cpp.o: ../src/nostr_server.cpp \
 
 ../externals/asio-1.30.2/include/asio/detail/strand_executor_service.hpp:
 
-../externals/openssl-3.3.2/include/openssl/core_dispatch.h:
-
 ../externals/cereal/include/cereal/external/rapidjson/stringbuffer.h:
 
 ../externals/asio-1.30.2/include/asio/strand.hpp:
@@ -3044,8 +2948,6 @@ CMakeFiles/server.dir/src/nostr_server.cpp.o: ../src/nostr_server.cpp \
 /usr/include/c++/11/bits/unique_lock.h:
 
 /usr/include/c++/11/bits/std_mutex.h:
-
-../externals/openssl-3.3.2/include/openssl/x509.h:
 
 /usr/include/c++/11/mutex:
 
@@ -3104,8 +3006,6 @@ CMakeFiles/server.dir/src/nostr_server.cpp.o: ../src/nostr_server.cpp \
 ../externals/asio-1.30.2/include/asio/ip/address_v6_range.hpp:
 
 ../externals/asio-1.30.2/include/asio/ip/address_v6_iterator.hpp:
-
-../externals/openssl-3.3.2/include/openssl/rsaerr.h:
 
 ../externals/asio-1.30.2/include/asio/ip/address_v4_range.hpp:
 
@@ -3207,8 +3107,6 @@ CMakeFiles/server.dir/src/nostr_server.cpp.o: ../src/nostr_server.cpp \
 
 ../externals/asio-1.30.2/include/asio/bind_executor.hpp:
 
-../externals/openssl-3.3.2/include/openssl/asn1.h:
-
 ../externals/asio-1.30.2/include/asio/bind_cancellation_slot.hpp:
 
 ../externals/asio-1.30.2/include/asio/bind_allocator.hpp:
@@ -3233,8 +3131,6 @@ CMakeFiles/server.dir/src/nostr_server.cpp.o: ../src/nostr_server.cpp \
 
 ../externals/asio-1.30.2/include/asio/detail/deadline_timer_service.hpp:
 
-../externals/openssl-3.3.2/include/openssl/obj_mac.h:
-
 ../externals/asio-1.30.2/include/asio/steady_timer.hpp:
 
 ../externals/asio-1.30.2/include/asio/basic_stream_socket.hpp:
@@ -3254,8 +3150,6 @@ CMakeFiles/server.dir/src/nostr_server.cpp.o: ../src/nostr_server.cpp \
 /usr/include/c++/11/bits/locale_facets.tcc:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
-
-../externals/openssl-3.3.2/include/openssl/types.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h:
 
@@ -3315,8 +3209,6 @@ CMakeFiles/server.dir/src/nostr_server.cpp.o: ../src/nostr_server.cpp \
 
 /usr/include/x86_64-linux-gnu/sys/stat.h:
 
-../externals/openssl-3.3.2/include/openssl/http.h:
-
 ../externals/asio-1.30.2/include/asio/detail/impl/thread_context.ipp:
 
 ../externals/asio-1.30.2/include/asio/windows/basic_overlapped_handle.hpp:
@@ -3374,8 +3266,6 @@ CMakeFiles/server.dir/src/nostr_server.cpp.o: ../src/nostr_server.cpp \
 /usr/include/c++/11/bits/refwrap.h:
 
 /usr/include/linux/stddef.h:
-
-../externals/openssl-3.3.2/include/openssl/pemerr.h:
 
 /usr/include/c++/11/new:
 
@@ -3444,8 +3334,6 @@ CMakeFiles/server.dir/src/nostr_server.cpp.o: ../src/nostr_server.cpp \
 ../externals/asio-1.30.2/include/asio/execution/invocable_archetype.hpp:
 
 ../externals/asio-1.30.2/include/asio/execution.hpp:
-
-../externals/openssl-3.3.2/include/openssl/core.h:
 
 /usr/include/x86_64-linux-gnu/asm/posix_types.h:
 
@@ -3551,8 +3439,6 @@ CMakeFiles/server.dir/src/nostr_server.cpp.o: ../src/nostr_server.cpp \
 
 /usr/include/x86_64-linux-gnu/asm/sockios.h:
 
-../externals/openssl-3.3.2/include/openssl/ec.h:
-
 ../externals/asio-1.30.2/include/asio/detail/conditionally_enabled_mutex.hpp:
 
 ../externals/asio-1.30.2/include/asio/detail/cstdint.hpp:
@@ -3636,8 +3522,6 @@ CMakeFiles/server.dir/src/nostr_server.cpp.o: ../src/nostr_server.cpp \
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
-
-../externals/openssl-3.3.2/include/openssl/bioerr.h:
 
 ../externals/asio-1.30.2/include/asio/detail/call_stack.hpp:
 
@@ -3823,8 +3707,6 @@ CMakeFiles/server.dir/src/nostr_server.cpp.o: ../src/nostr_server.cpp \
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
 
-../externals/openssl-3.3.2/include/openssl/dh.h:
-
 /usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
 /usr/include/c++/11/bits/functexcept.h:
@@ -3834,8 +3716,6 @@ CMakeFiles/server.dir/src/nostr_server.cpp.o: ../src/nostr_server.cpp \
 ../externals/asio-1.30.2/include/asio/impl/any_io_executor.ipp:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
-
-../externals/openssl-3.3.2/include/openssl/symhacks.h:
 
 /usr/include/c++/11/bits/postypes.h:
 
@@ -3864,8 +3744,6 @@ CMakeFiles/server.dir/src/nostr_server.cpp.o: ../src/nostr_server.cpp \
 ../externals/asio-1.30.2/include/asio/impl/read.hpp:
 
 ../externals/asio-1.30.2/include/asio/basic_datagram_socket.hpp:
-
-../externals/openssl-3.3.2/include/openssl/bn.h:
 
 ../externals/asio-1.30.2/include/asio/associator.hpp:
 
@@ -3897,8 +3775,6 @@ CMakeFiles/server.dir/src/nostr_server.cpp.o: ../src/nostr_server.cpp \
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
 
-../externals/openssl-3.3.2/include/openssl/conf.h:
-
 ../externals/asio-1.30.2/include/asio/impl/read_at.hpp:
 
 /usr/include/c++/11/bits/localefwd.h:
@@ -3910,8 +3786,6 @@ CMakeFiles/server.dir/src/nostr_server.cpp.o: ../src/nostr_server.cpp \
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
 /usr/include/locale.h:
-
-../externals/openssl-3.3.2/include/openssl/dsa.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
 
@@ -3974,8 +3848,6 @@ CMakeFiles/server.dir/src/nostr_server.cpp.o: ../src/nostr_server.cpp \
 /usr/include/asm-generic/socket.h:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
-
-../externals/openssl-3.3.2/include/openssl/ecerr.h:
 
 ../externals/asio-1.30.2/include/asio/detail/is_buffer_sequence.hpp:
 
@@ -4153,8 +4025,6 @@ CMakeFiles/server.dir/src/nostr_server.cpp.o: ../src/nostr_server.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h:
 
-../externals/openssl-3.3.2/include/openssl/x509_vfy.h:
-
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 ../externals/asio-1.30.2/include/asio/any_completion_executor.hpp:
@@ -4297,8 +4167,6 @@ CMakeFiles/server.dir/src/nostr_server.cpp.o: ../src/nostr_server.cpp \
 
 ../externals/asio-1.30.2/include/asio/execution/prefer_only.hpp:
 
-../externals/openssl-3.3.2/include/openssl/rsa.h:
-
 ../externals/asio-1.30.2/include/asio/append.hpp:
 
 ../externals/asio-1.30.2/include/asio/ip/basic_resolver_results.hpp:
@@ -4357,8 +4225,6 @@ CMakeFiles/server.dir/src/nostr_server.cpp.o: ../src/nostr_server.cpp \
 
 ../externals/asio-1.30.2/include/asio/detail/fenced_block.hpp:
 
-../externals/openssl-3.3.2/include/openssl/evperr.h:
-
 ../externals/asio-1.30.2/include/asio/detail/std_fenced_block.hpp:
 
 ../externals/asio-1.30.2/include/asio/ip/resolver_base.hpp:
@@ -4402,8 +4268,6 @@ CMakeFiles/server.dir/src/nostr_server.cpp.o: ../src/nostr_server.cpp \
 /usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
 
 ../externals/asio-1.30.2/include/asio/detail/scheduler_thread_info.hpp:
-
-../externals/openssl-3.3.2/include/openssl/stack.h:
 
 ../externals/asio-1.30.2/include/asio/detail/signal_blocker.hpp:
 
@@ -4514,8 +4378,6 @@ CMakeFiles/server.dir/src/nostr_server.cpp.o: ../src/nostr_server.cpp \
 ../externals/asio-1.30.2/include/asio/socket_base.hpp:
 
 ../externals/asio-1.30.2/include/asio/detail/io_control.hpp:
-
-../externals/openssl-3.3.2/include/openssl/params.h:
 
 ../externals/asio-1.30.2/include/asio/detail/array_fwd.hpp:
 
