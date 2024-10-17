@@ -3010,4 +3010,5 @@ CMakeFiles/server.dir/src/nostr_server.cpp.o
  /home/crash/nostr/src/database.hpp
  /usr/include/sqlite3.h
  /home/crash/nostr/src/crypto.hpp
+ /home/crash/nostr/src/log.hpp
 

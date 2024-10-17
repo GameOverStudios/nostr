@@ -3005,7 +3005,8 @@ CMakeFiles/server.dir/src/nostr_server.cpp.o: ../src/nostr_server.cpp \
   /usr/include/c++/11/bits/stl_stack.h \
   ../src/database.hpp \
   /usr/include/sqlite3.h \
-  ../src/crypto.hpp
+  ../src/crypto.hpp \
+  ../src/log.hpp
 
 
 ../src/crypto.hpp:
@@ -3331,6 +3332,8 @@ CMakeFiles/server.dir/src/nostr_server.cpp.o: ../src/nostr_server.cpp \
 ../externals/asio-1.30.2/include/asio/wait_traits.hpp:
 
 ../externals/asio-1.30.2/include/asio/detail/timer_scheduler_fwd.hpp:
+
+../src/log.hpp:
 
 ../externals/asio-1.30.2/include/asio/detail/timer_scheduler.hpp:
 

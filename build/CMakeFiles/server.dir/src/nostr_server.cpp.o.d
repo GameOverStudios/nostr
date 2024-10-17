@@ -864,4 +864,5 @@ CMakeFiles/server.dir/src/nostr_server.cpp.o: \
  /usr/include/c++/11/stack /usr/include/c++/11/deque \
  /usr/include/c++/11/bits/stl_deque.h /usr/include/c++/11/bits/deque.tcc \
  /usr/include/c++/11/bits/stl_stack.h /home/crash/nostr/src/database.hpp \
- /usr/include/sqlite3.h /home/crash/nostr/src/crypto.hpp
+ /usr/include/sqlite3.h /home/crash/nostr/src/crypto.hpp \
+ /home/crash/nostr/src/log.hpp

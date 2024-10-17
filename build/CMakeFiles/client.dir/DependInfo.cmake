@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/crash/nostr/src/crypto.cpp" "CMakeFiles/client.dir/src/crypto.cpp.o" "gcc" "CMakeFiles/client.dir/src/crypto.cpp.o.d"
   "/home/crash/nostr/src/database.cpp" "CMakeFiles/client.dir/src/database.cpp.o" "gcc" "CMakeFiles/client.dir/src/database.cpp.o.d"
   "/home/crash/nostr/src/event.cpp" "CMakeFiles/client.dir/src/event.cpp.o" "gcc" "CMakeFiles/client.dir/src/event.cpp.o.d"
+  "/home/crash/nostr/src/log.cpp" "CMakeFiles/client.dir/src/log.cpp.o" "gcc" "CMakeFiles/client.dir/src/log.cpp.o.d"
   "/home/crash/nostr/src/nostr_client.cpp" "CMakeFiles/client.dir/src/nostr_client.cpp.o" "gcc" "CMakeFiles/client.dir/src/nostr_client.cpp.o.d"
   )
 
