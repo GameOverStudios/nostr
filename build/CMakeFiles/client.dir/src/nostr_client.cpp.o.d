@@ -864,4 +864,5 @@ CMakeFiles/client.dir/src/nostr_client.cpp.o: \
  /home/crash/nostr/externals/cereal/include/cereal/external/base64.hpp \
  /usr/include/c++/11/stack /usr/include/c++/11/deque \
  /usr/include/c++/11/bits/stl_deque.h /usr/include/c++/11/bits/deque.tcc \
- /usr/include/c++/11/bits/stl_stack.h /home/crash/nostr/src/log.hpp
+ /usr/include/c++/11/bits/stl_stack.h /home/crash/nostr/src/log.hpp \
+ /home/crash/nostr/src/auth.hpp

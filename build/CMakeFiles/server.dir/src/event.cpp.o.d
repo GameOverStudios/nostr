@@ -884,4 +884,4 @@ CMakeFiles/server.dir/src/event.cpp.o: /home/crash/nostr/src/event.cpp \
  /usr/include/c++/11/stack /usr/include/c++/11/deque \
  /usr/include/c++/11/bits/stl_deque.h /usr/include/c++/11/bits/deque.tcc \
  /usr/include/c++/11/bits/stl_stack.h /home/crash/nostr/src/database.hpp \
- /usr/include/sqlite3.h
+ /usr/include/sqlite3.h /home/crash/nostr/src/uuid.hpp

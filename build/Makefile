@@ -142,6 +142,33 @@ client/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
 .PHONY : client/fast
 
+src/auth.o: src/auth.cpp.o
+.PHONY : src/auth.o
+
+# target to build an object file
+src/auth.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/auth.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/auth.cpp.o
+.PHONY : src/auth.cpp.o
+
+src/auth.i: src/auth.cpp.i
+.PHONY : src/auth.i
+
+# target to preprocess a source file
+src/auth.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/auth.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/auth.cpp.i
+.PHONY : src/auth.cpp.i
+
+src/auth.s: src/auth.cpp.s
+.PHONY : src/auth.s
+
+# target to generate assembly for a file
+src/auth.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/auth.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/auth.cpp.s
+.PHONY : src/auth.cpp.s
+
 src/crypto.o: src/crypto.cpp.o
 .PHONY : src/crypto.o
 
@@ -298,6 +325,33 @@ src/nostr_server.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/nostr_server.cpp.s
 .PHONY : src/nostr_server.cpp.s
 
+src/uuid.o: src/uuid.cpp.o
+.PHONY : src/uuid.o
+
+# target to build an object file
+src/uuid.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/uuid.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/uuid.cpp.o
+.PHONY : src/uuid.cpp.o
+
+src/uuid.i: src/uuid.cpp.i
+.PHONY : src/uuid.i
+
+# target to preprocess a source file
+src/uuid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/uuid.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/uuid.cpp.i
+.PHONY : src/uuid.cpp.i
+
+src/uuid.s: src/uuid.cpp.s
+.PHONY : src/uuid.s
+
+# target to generate assembly for a file
+src/uuid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/uuid.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/uuid.cpp.s
+.PHONY : src/uuid.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -308,6 +362,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... client"
 	@echo "... server"
+	@echo "... src/auth.o"
+	@echo "... src/auth.i"
+	@echo "... src/auth.s"
 	@echo "... src/crypto.o"
 	@echo "... src/crypto.i"
 	@echo "... src/crypto.s"
@@ -326,6 +383,9 @@ help:
 	@echo "... src/nostr_server.o"
 	@echo "... src/nostr_server.i"
 	@echo "... src/nostr_server.s"
+	@echo "... src/uuid.o"
+	@echo "... src/uuid.i"
+	@echo "... src/uuid.s"
 .PHONY : help
 
 
