@@ -1,72 +1,164 @@
 [
-{
-  "directory": "/home/crash/nostr/build",
-  "command": "/usr/bin/g++  -I/home/crash/nostr/externals/asio-1.30.2/include -I/home/crash/nostr/externals/openssl-3.3.2/include -I/home/crash/nostr/externals/cereal/include -I/home/crash/nostr/externals/sqlite/libsqlite3 -g -std=gnu++11 -o CMakeFiles/server.dir/src/nostr_server.cpp.o -c /home/crash/nostr/src/nostr_server.cpp",
-  "file": "/home/crash/nostr/src/nostr_server.cpp"
-},
-{
-  "directory": "/home/crash/nostr/build",
-  "command": "/usr/bin/g++  -I/home/crash/nostr/externals/asio-1.30.2/include -I/home/crash/nostr/externals/openssl-3.3.2/include -I/home/crash/nostr/externals/cereal/include -I/home/crash/nostr/externals/sqlite/libsqlite3 -g -std=gnu++11 -o CMakeFiles/server.dir/src/event.cpp.o -c /home/crash/nostr/src/event.cpp",
-  "file": "/home/crash/nostr/src/event.cpp"
-},
-{
-  "directory": "/home/crash/nostr/build",
-  "command": "/usr/bin/g++  -I/home/crash/nostr/externals/asio-1.30.2/include -I/home/crash/nostr/externals/openssl-3.3.2/include -I/home/crash/nostr/externals/cereal/include -I/home/crash/nostr/externals/sqlite/libsqlite3 -g -std=gnu++11 -o CMakeFiles/server.dir/src/database.cpp.o -c /home/crash/nostr/src/database.cpp",
-  "file": "/home/crash/nostr/src/database.cpp"
-},
-{
-  "directory": "/home/crash/nostr/build",
-  "command": "/usr/bin/g++  -I/home/crash/nostr/externals/asio-1.30.2/include -I/home/crash/nostr/externals/openssl-3.3.2/include -I/home/crash/nostr/externals/cereal/include -I/home/crash/nostr/externals/sqlite/libsqlite3 -g -std=gnu++11 -o CMakeFiles/server.dir/src/crypto.cpp.o -c /home/crash/nostr/src/crypto.cpp",
-  "file": "/home/crash/nostr/src/crypto.cpp"
-},
-{
-  "directory": "/home/crash/nostr/build",
-  "command": "/usr/bin/g++  -I/home/crash/nostr/externals/asio-1.30.2/include -I/home/crash/nostr/externals/openssl-3.3.2/include -I/home/crash/nostr/externals/cereal/include -I/home/crash/nostr/externals/sqlite/libsqlite3 -g -std=gnu++11 -o CMakeFiles/server.dir/src/log.cpp.o -c /home/crash/nostr/src/log.cpp",
-  "file": "/home/crash/nostr/src/log.cpp"
-},
-{
-  "directory": "/home/crash/nostr/build",
-  "command": "/usr/bin/g++  -I/home/crash/nostr/externals/asio-1.30.2/include -I/home/crash/nostr/externals/openssl-3.3.2/include -I/home/crash/nostr/externals/cereal/include -I/home/crash/nostr/externals/sqlite/libsqlite3 -g -std=gnu++11 -o CMakeFiles/server.dir/src/auth.cpp.o -c /home/crash/nostr/src/auth.cpp",
-  "file": "/home/crash/nostr/src/auth.cpp"
-},
-{
-  "directory": "/home/crash/nostr/build",
-  "command": "/usr/bin/g++  -I/home/crash/nostr/externals/asio-1.30.2/include -I/home/crash/nostr/externals/openssl-3.3.2/include -I/home/crash/nostr/externals/cereal/include -I/home/crash/nostr/externals/sqlite/libsqlite3 -g -std=gnu++11 -o CMakeFiles/server.dir/src/uuid.cpp.o -c /home/crash/nostr/src/uuid.cpp",
-  "file": "/home/crash/nostr/src/uuid.cpp"
-},
-{
-  "directory": "/home/crash/nostr/build",
-  "command": "/usr/bin/g++  -I/home/crash/nostr/externals/asio-1.30.2/include -I/home/crash/nostr/externals/openssl-3.3.2/include -I/home/crash/nostr/externals/cereal/include -I/home/crash/nostr/externals/sqlite/libsqlite3 -g -std=gnu++11 -o CMakeFiles/client.dir/src/nostr_client.cpp.o -c /home/crash/nostr/src/nostr_client.cpp",
-  "file": "/home/crash/nostr/src/nostr_client.cpp"
-},
-{
-  "directory": "/home/crash/nostr/build",
-  "command": "/usr/bin/g++  -I/home/crash/nostr/externals/asio-1.30.2/include -I/home/crash/nostr/externals/openssl-3.3.2/include -I/home/crash/nostr/externals/cereal/include -I/home/crash/nostr/externals/sqlite/libsqlite3 -g -std=gnu++11 -o CMakeFiles/client.dir/src/event.cpp.o -c /home/crash/nostr/src/event.cpp",
-  "file": "/home/crash/nostr/src/event.cpp"
-},
-{
-  "directory": "/home/crash/nostr/build",
-  "command": "/usr/bin/g++  -I/home/crash/nostr/externals/asio-1.30.2/include -I/home/crash/nostr/externals/openssl-3.3.2/include -I/home/crash/nostr/externals/cereal/include -I/home/crash/nostr/externals/sqlite/libsqlite3 -g -std=gnu++11 -o CMakeFiles/client.dir/src/database.cpp.o -c /home/crash/nostr/src/database.cpp",
-  "file": "/home/crash/nostr/src/database.cpp"
-},
-{
-  "directory": "/home/crash/nostr/build",
-  "command": "/usr/bin/g++  -I/home/crash/nostr/externals/asio-1.30.2/include -I/home/crash/nostr/externals/openssl-3.3.2/include -I/home/crash/nostr/externals/cereal/include -I/home/crash/nostr/externals/sqlite/libsqlite3 -g -std=gnu++11 -o CMakeFiles/client.dir/src/crypto.cpp.o -c /home/crash/nostr/src/crypto.cpp",
-  "file": "/home/crash/nostr/src/crypto.cpp"
-},
-{
-  "directory": "/home/crash/nostr/build",
-  "command": "/usr/bin/g++  -I/home/crash/nostr/externals/asio-1.30.2/include -I/home/crash/nostr/externals/openssl-3.3.2/include -I/home/crash/nostr/externals/cereal/include -I/home/crash/nostr/externals/sqlite/libsqlite3 -g -std=gnu++11 -o CMakeFiles/client.dir/src/log.cpp.o -c /home/crash/nostr/src/log.cpp",
-  "file": "/home/crash/nostr/src/log.cpp"
-},
-{
-  "directory": "/home/crash/nostr/build",
-  "command": "/usr/bin/g++  -I/home/crash/nostr/externals/asio-1.30.2/include -I/home/crash/nostr/externals/openssl-3.3.2/include -I/home/crash/nostr/externals/cereal/include -I/home/crash/nostr/externals/sqlite/libsqlite3 -g -std=gnu++11 -o CMakeFiles/client.dir/src/auth.cpp.o -c /home/crash/nostr/src/auth.cpp",
-  "file": "/home/crash/nostr/src/auth.cpp"
-},
-{
-  "directory": "/home/crash/nostr/build",
-  "command": "/usr/bin/g++  -I/home/crash/nostr/externals/asio-1.30.2/include -I/home/crash/nostr/externals/openssl-3.3.2/include -I/home/crash/nostr/externals/cereal/include -I/home/crash/nostr/externals/sqlite/libsqlite3 -g -std=gnu++11 -o CMakeFiles/client.dir/src/uuid.cpp.o -c /home/crash/nostr/src/uuid.cpp",
-  "file": "/home/crash/nostr/src/uuid.cpp"
-}
+  {
+    "directory": "/home/crash/Projects/nostr/build",
+    "command": "cc -Isubprojects/cJSON-1.7.18/libcjson.so.1.7.18.p -Isubprojects/cJSON-1.7.18 -I../subprojects/cJSON-1.7.18 -fvisibility=hidden -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -g -DCJSON_EXPORT_SYMBOLS -DCJSON_API_VISIBILITY '-DUNITY_WEAK_ATTRIBUTE=__attribute__((weak))' -fPIC -MD -MQ subprojects/cJSON-1.7.18/libcjson.so.1.7.18.p/cJSON.c.o -MF subprojects/cJSON-1.7.18/libcjson.so.1.7.18.p/cJSON.c.o.d -o subprojects/cJSON-1.7.18/libcjson.so.1.7.18.p/cJSON.c.o -c ../subprojects/cJSON-1.7.18/cJSON.c",
+    "file": "../subprojects/cJSON-1.7.18/cJSON.c",
+    "output": "subprojects/cJSON-1.7.18/libcjson.so.1.7.18.p/cJSON.c.o"
+  },
+  {
+    "directory": "/home/crash/Projects/nostr/build",
+    "command": "cc -Isubprojects/cJSON-1.7.18/libcjson_utils.so.1.7.18.p -Isubprojects/cJSON-1.7.18 -I../subprojects/cJSON-1.7.18 -Isubprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/include-workaround-meson -fvisibility=hidden -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -g -DCJSON_EXPORT_SYMBOLS -DCJSON_API_VISIBILITY '-DUNITY_WEAK_ATTRIBUTE=__attribute__((weak))' -fPIC -DCJSON_IMPORT_SYMBOLS -MD -MQ subprojects/cJSON-1.7.18/libcjson_utils.so.1.7.18.p/cJSON_Utils.c.o -MF subprojects/cJSON-1.7.18/libcjson_utils.so.1.7.18.p/cJSON_Utils.c.o.d -o subprojects/cJSON-1.7.18/libcjson_utils.so.1.7.18.p/cJSON_Utils.c.o -c ../subprojects/cJSON-1.7.18/cJSON_Utils.c",
+    "file": "../subprojects/cJSON-1.7.18/cJSON_Utils.c",
+    "output": "subprojects/cJSON-1.7.18/libcjson_utils.so.1.7.18.p/cJSON_Utils.c.o"
+  },
+  {
+    "directory": "/home/crash/Projects/nostr/build",
+    "command": "cc -Isubprojects/cJSON-1.7.18/root-test.p -Isubprojects/cJSON-1.7.18 -I../subprojects/cJSON-1.7.18 -Isubprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/include-workaround-meson -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -g -DCJSON_EXPORT_SYMBOLS -DCJSON_API_VISIBILITY '-DUNITY_WEAK_ATTRIBUTE=__attribute__((weak))' -DCJSON_IMPORT_SYMBOLS -MD -MQ subprojects/cJSON-1.7.18/root-test.p/test.c.o -MF subprojects/cJSON-1.7.18/root-test.p/test.c.o.d -o subprojects/cJSON-1.7.18/root-test.p/test.c.o -c ../subprojects/cJSON-1.7.18/test.c",
+    "file": "../subprojects/cJSON-1.7.18/test.c",
+    "output": "subprojects/cJSON-1.7.18/root-test.p/test.c.o"
+  },
+  {
+    "directory": "/home/crash/Projects/nostr/build",
+    "command": "cc -Isubprojects/cJSON-1.7.18/tests/libunity.a.p -Isubprojects/cJSON-1.7.18/tests -I../subprojects/cJSON-1.7.18/tests -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -g -DCJSON_EXPORT_SYMBOLS -DCJSON_API_VISIBILITY '-DUNITY_WEAK_ATTRIBUTE=__attribute__((weak))' -fPIC -MD -MQ subprojects/cJSON-1.7.18/tests/libunity.a.p/unity_src_unity.c.o -MF subprojects/cJSON-1.7.18/tests/libunity.a.p/unity_src_unity.c.o.d -o subprojects/cJSON-1.7.18/tests/libunity.a.p/unity_src_unity.c.o -c ../subprojects/cJSON-1.7.18/tests/unity/src/unity.c",
+    "file": "../subprojects/cJSON-1.7.18/tests/unity/src/unity.c",
+    "output": "subprojects/cJSON-1.7.18/tests/libunity.a.p/unity_src_unity.c.o"
+  },
+  {
+    "directory": "/home/crash/Projects/nostr/build",
+    "command": "cc -Isubprojects/cJSON-1.7.18/tests/cjson_add.p -Isubprojects/cJSON-1.7.18/tests -I../subprojects/cJSON-1.7.18/tests -Isubprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/tests/unity/src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -g -DCJSON_EXPORT_SYMBOLS -DCJSON_API_VISIBILITY '-DUNITY_WEAK_ATTRIBUTE=__attribute__((weak))' -DCJSON_IMPORT_SYMBOLS -MD -MQ subprojects/cJSON-1.7.18/tests/cjson_add.p/cjson_add.c.o -MF subprojects/cJSON-1.7.18/tests/cjson_add.p/cjson_add.c.o.d -o subprojects/cJSON-1.7.18/tests/cjson_add.p/cjson_add.c.o -c ../subprojects/cJSON-1.7.18/tests/cjson_add.c",
+    "file": "../subprojects/cJSON-1.7.18/tests/cjson_add.c",
+    "output": "subprojects/cJSON-1.7.18/tests/cjson_add.p/cjson_add.c.o"
+  },
+  {
+    "directory": "/home/crash/Projects/nostr/build",
+    "command": "cc -Isubprojects/cJSON-1.7.18/tests/compare_tests.p -Isubprojects/cJSON-1.7.18/tests -I../subprojects/cJSON-1.7.18/tests -Isubprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/tests/unity/src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -g -DCJSON_EXPORT_SYMBOLS -DCJSON_API_VISIBILITY '-DUNITY_WEAK_ATTRIBUTE=__attribute__((weak))' -DCJSON_IMPORT_SYMBOLS -MD -MQ subprojects/cJSON-1.7.18/tests/compare_tests.p/compare_tests.c.o -MF subprojects/cJSON-1.7.18/tests/compare_tests.p/compare_tests.c.o.d -o subprojects/cJSON-1.7.18/tests/compare_tests.p/compare_tests.c.o -c ../subprojects/cJSON-1.7.18/tests/compare_tests.c",
+    "file": "../subprojects/cJSON-1.7.18/tests/compare_tests.c",
+    "output": "subprojects/cJSON-1.7.18/tests/compare_tests.p/compare_tests.c.o"
+  },
+  {
+    "directory": "/home/crash/Projects/nostr/build",
+    "command": "cc -Isubprojects/cJSON-1.7.18/tests/json_patch_tests.p -Isubprojects/cJSON-1.7.18/tests -I../subprojects/cJSON-1.7.18/tests -Isubprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/tests/unity/src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -g -DCJSON_EXPORT_SYMBOLS -DCJSON_API_VISIBILITY '-DUNITY_WEAK_ATTRIBUTE=__attribute__((weak))' -DCJSON_IMPORT_SYMBOLS -MD -MQ subprojects/cJSON-1.7.18/tests/json_patch_tests.p/json_patch_tests.c.o -MF subprojects/cJSON-1.7.18/tests/json_patch_tests.p/json_patch_tests.c.o.d -o subprojects/cJSON-1.7.18/tests/json_patch_tests.p/json_patch_tests.c.o -c ../subprojects/cJSON-1.7.18/tests/json_patch_tests.c",
+    "file": "../subprojects/cJSON-1.7.18/tests/json_patch_tests.c",
+    "output": "subprojects/cJSON-1.7.18/tests/json_patch_tests.p/json_patch_tests.c.o"
+  },
+  {
+    "directory": "/home/crash/Projects/nostr/build",
+    "command": "cc -Isubprojects/cJSON-1.7.18/tests/minify_tests.p -Isubprojects/cJSON-1.7.18/tests -I../subprojects/cJSON-1.7.18/tests -Isubprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/tests/unity/src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -g -DCJSON_EXPORT_SYMBOLS -DCJSON_API_VISIBILITY '-DUNITY_WEAK_ATTRIBUTE=__attribute__((weak))' -DCJSON_IMPORT_SYMBOLS -MD -MQ subprojects/cJSON-1.7.18/tests/minify_tests.p/minify_tests.c.o -MF subprojects/cJSON-1.7.18/tests/minify_tests.p/minify_tests.c.o.d -o subprojects/cJSON-1.7.18/tests/minify_tests.p/minify_tests.c.o -c ../subprojects/cJSON-1.7.18/tests/minify_tests.c",
+    "file": "../subprojects/cJSON-1.7.18/tests/minify_tests.c",
+    "output": "subprojects/cJSON-1.7.18/tests/minify_tests.p/minify_tests.c.o"
+  },
+  {
+    "directory": "/home/crash/Projects/nostr/build",
+    "command": "cc -Isubprojects/cJSON-1.7.18/tests/misc_tests.p -Isubprojects/cJSON-1.7.18/tests -I../subprojects/cJSON-1.7.18/tests -Isubprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/tests/unity/src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -g -DCJSON_EXPORT_SYMBOLS -DCJSON_API_VISIBILITY '-DUNITY_WEAK_ATTRIBUTE=__attribute__((weak))' -DCJSON_IMPORT_SYMBOLS -MD -MQ subprojects/cJSON-1.7.18/tests/misc_tests.p/misc_tests.c.o -MF subprojects/cJSON-1.7.18/tests/misc_tests.p/misc_tests.c.o.d -o subprojects/cJSON-1.7.18/tests/misc_tests.p/misc_tests.c.o -c ../subprojects/cJSON-1.7.18/tests/misc_tests.c",
+    "file": "../subprojects/cJSON-1.7.18/tests/misc_tests.c",
+    "output": "subprojects/cJSON-1.7.18/tests/misc_tests.p/misc_tests.c.o"
+  },
+  {
+    "directory": "/home/crash/Projects/nostr/build",
+    "command": "cc -Isubprojects/cJSON-1.7.18/tests/misc_utils_tests.p -Isubprojects/cJSON-1.7.18/tests -I../subprojects/cJSON-1.7.18/tests -Isubprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/tests/unity/src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -g -DCJSON_EXPORT_SYMBOLS -DCJSON_API_VISIBILITY '-DUNITY_WEAK_ATTRIBUTE=__attribute__((weak))' -DCJSON_IMPORT_SYMBOLS -MD -MQ subprojects/cJSON-1.7.18/tests/misc_utils_tests.p/misc_utils_tests.c.o -MF subprojects/cJSON-1.7.18/tests/misc_utils_tests.p/misc_utils_tests.c.o.d -o subprojects/cJSON-1.7.18/tests/misc_utils_tests.p/misc_utils_tests.c.o -c ../subprojects/cJSON-1.7.18/tests/misc_utils_tests.c",
+    "file": "../subprojects/cJSON-1.7.18/tests/misc_utils_tests.c",
+    "output": "subprojects/cJSON-1.7.18/tests/misc_utils_tests.p/misc_utils_tests.c.o"
+  },
+  {
+    "directory": "/home/crash/Projects/nostr/build",
+    "command": "cc -Isubprojects/cJSON-1.7.18/tests/old_utils_tests.p -Isubprojects/cJSON-1.7.18/tests -I../subprojects/cJSON-1.7.18/tests -Isubprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/tests/unity/src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -g -DCJSON_EXPORT_SYMBOLS -DCJSON_API_VISIBILITY '-DUNITY_WEAK_ATTRIBUTE=__attribute__((weak))' -DCJSON_IMPORT_SYMBOLS -MD -MQ subprojects/cJSON-1.7.18/tests/old_utils_tests.p/old_utils_tests.c.o -MF subprojects/cJSON-1.7.18/tests/old_utils_tests.p/old_utils_tests.c.o.d -o subprojects/cJSON-1.7.18/tests/old_utils_tests.p/old_utils_tests.c.o -c ../subprojects/cJSON-1.7.18/tests/old_utils_tests.c",
+    "file": "../subprojects/cJSON-1.7.18/tests/old_utils_tests.c",
+    "output": "subprojects/cJSON-1.7.18/tests/old_utils_tests.p/old_utils_tests.c.o"
+  },
+  {
+    "directory": "/home/crash/Projects/nostr/build",
+    "command": "cc -Isubprojects/cJSON-1.7.18/tests/parse_array.p -Isubprojects/cJSON-1.7.18/tests -I../subprojects/cJSON-1.7.18/tests -Isubprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/tests/unity/src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -g -DCJSON_EXPORT_SYMBOLS -DCJSON_API_VISIBILITY '-DUNITY_WEAK_ATTRIBUTE=__attribute__((weak))' -DCJSON_IMPORT_SYMBOLS -MD -MQ subprojects/cJSON-1.7.18/tests/parse_array.p/parse_array.c.o -MF subprojects/cJSON-1.7.18/tests/parse_array.p/parse_array.c.o.d -o subprojects/cJSON-1.7.18/tests/parse_array.p/parse_array.c.o -c ../subprojects/cJSON-1.7.18/tests/parse_array.c",
+    "file": "../subprojects/cJSON-1.7.18/tests/parse_array.c",
+    "output": "subprojects/cJSON-1.7.18/tests/parse_array.p/parse_array.c.o"
+  },
+  {
+    "directory": "/home/crash/Projects/nostr/build",
+    "command": "cc -Isubprojects/cJSON-1.7.18/tests/parse_examples.p -Isubprojects/cJSON-1.7.18/tests -I../subprojects/cJSON-1.7.18/tests -Isubprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/tests/unity/src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -g -DCJSON_EXPORT_SYMBOLS -DCJSON_API_VISIBILITY '-DUNITY_WEAK_ATTRIBUTE=__attribute__((weak))' -DCJSON_IMPORT_SYMBOLS -MD -MQ subprojects/cJSON-1.7.18/tests/parse_examples.p/parse_examples.c.o -MF subprojects/cJSON-1.7.18/tests/parse_examples.p/parse_examples.c.o.d -o subprojects/cJSON-1.7.18/tests/parse_examples.p/parse_examples.c.o -c ../subprojects/cJSON-1.7.18/tests/parse_examples.c",
+    "file": "../subprojects/cJSON-1.7.18/tests/parse_examples.c",
+    "output": "subprojects/cJSON-1.7.18/tests/parse_examples.p/parse_examples.c.o"
+  },
+  {
+    "directory": "/home/crash/Projects/nostr/build",
+    "command": "cc -Isubprojects/cJSON-1.7.18/tests/parse_hex4.p -Isubprojects/cJSON-1.7.18/tests -I../subprojects/cJSON-1.7.18/tests -Isubprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/tests/unity/src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -g -DCJSON_EXPORT_SYMBOLS -DCJSON_API_VISIBILITY '-DUNITY_WEAK_ATTRIBUTE=__attribute__((weak))' -DCJSON_IMPORT_SYMBOLS -MD -MQ subprojects/cJSON-1.7.18/tests/parse_hex4.p/parse_hex4.c.o -MF subprojects/cJSON-1.7.18/tests/parse_hex4.p/parse_hex4.c.o.d -o subprojects/cJSON-1.7.18/tests/parse_hex4.p/parse_hex4.c.o -c ../subprojects/cJSON-1.7.18/tests/parse_hex4.c",
+    "file": "../subprojects/cJSON-1.7.18/tests/parse_hex4.c",
+    "output": "subprojects/cJSON-1.7.18/tests/parse_hex4.p/parse_hex4.c.o"
+  },
+  {
+    "directory": "/home/crash/Projects/nostr/build",
+    "command": "cc -Isubprojects/cJSON-1.7.18/tests/parse_number.p -Isubprojects/cJSON-1.7.18/tests -I../subprojects/cJSON-1.7.18/tests -Isubprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/tests/unity/src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -g -DCJSON_EXPORT_SYMBOLS -DCJSON_API_VISIBILITY '-DUNITY_WEAK_ATTRIBUTE=__attribute__((weak))' -DCJSON_IMPORT_SYMBOLS -MD -MQ subprojects/cJSON-1.7.18/tests/parse_number.p/parse_number.c.o -MF subprojects/cJSON-1.7.18/tests/parse_number.p/parse_number.c.o.d -o subprojects/cJSON-1.7.18/tests/parse_number.p/parse_number.c.o -c ../subprojects/cJSON-1.7.18/tests/parse_number.c",
+    "file": "../subprojects/cJSON-1.7.18/tests/parse_number.c",
+    "output": "subprojects/cJSON-1.7.18/tests/parse_number.p/parse_number.c.o"
+  },
+  {
+    "directory": "/home/crash/Projects/nostr/build",
+    "command": "cc -Isubprojects/cJSON-1.7.18/tests/parse_object.p -Isubprojects/cJSON-1.7.18/tests -I../subprojects/cJSON-1.7.18/tests -Isubprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/tests/unity/src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -g -DCJSON_EXPORT_SYMBOLS -DCJSON_API_VISIBILITY '-DUNITY_WEAK_ATTRIBUTE=__attribute__((weak))' -DCJSON_IMPORT_SYMBOLS -MD -MQ subprojects/cJSON-1.7.18/tests/parse_object.p/parse_object.c.o -MF subprojects/cJSON-1.7.18/tests/parse_object.p/parse_object.c.o.d -o subprojects/cJSON-1.7.18/tests/parse_object.p/parse_object.c.o -c ../subprojects/cJSON-1.7.18/tests/parse_object.c",
+    "file": "../subprojects/cJSON-1.7.18/tests/parse_object.c",
+    "output": "subprojects/cJSON-1.7.18/tests/parse_object.p/parse_object.c.o"
+  },
+  {
+    "directory": "/home/crash/Projects/nostr/build",
+    "command": "cc -Isubprojects/cJSON-1.7.18/tests/parse_string.p -Isubprojects/cJSON-1.7.18/tests -I../subprojects/cJSON-1.7.18/tests -Isubprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/tests/unity/src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -g -DCJSON_EXPORT_SYMBOLS -DCJSON_API_VISIBILITY '-DUNITY_WEAK_ATTRIBUTE=__attribute__((weak))' -DCJSON_IMPORT_SYMBOLS -MD -MQ subprojects/cJSON-1.7.18/tests/parse_string.p/parse_string.c.o -MF subprojects/cJSON-1.7.18/tests/parse_string.p/parse_string.c.o.d -o subprojects/cJSON-1.7.18/tests/parse_string.p/parse_string.c.o -c ../subprojects/cJSON-1.7.18/tests/parse_string.c",
+    "file": "../subprojects/cJSON-1.7.18/tests/parse_string.c",
+    "output": "subprojects/cJSON-1.7.18/tests/parse_string.p/parse_string.c.o"
+  },
+  {
+    "directory": "/home/crash/Projects/nostr/build",
+    "command": "cc -Isubprojects/cJSON-1.7.18/tests/parse_value.p -Isubprojects/cJSON-1.7.18/tests -I../subprojects/cJSON-1.7.18/tests -Isubprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/tests/unity/src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -g -DCJSON_EXPORT_SYMBOLS -DCJSON_API_VISIBILITY '-DUNITY_WEAK_ATTRIBUTE=__attribute__((weak))' -DCJSON_IMPORT_SYMBOLS -MD -MQ subprojects/cJSON-1.7.18/tests/parse_value.p/parse_value.c.o -MF subprojects/cJSON-1.7.18/tests/parse_value.p/parse_value.c.o.d -o subprojects/cJSON-1.7.18/tests/parse_value.p/parse_value.c.o -c ../subprojects/cJSON-1.7.18/tests/parse_value.c",
+    "file": "../subprojects/cJSON-1.7.18/tests/parse_value.c",
+    "output": "subprojects/cJSON-1.7.18/tests/parse_value.p/parse_value.c.o"
+  },
+  {
+    "directory": "/home/crash/Projects/nostr/build",
+    "command": "cc -Isubprojects/cJSON-1.7.18/tests/parse_with_opts.p -Isubprojects/cJSON-1.7.18/tests -I../subprojects/cJSON-1.7.18/tests -Isubprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/tests/unity/src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -g -DCJSON_EXPORT_SYMBOLS -DCJSON_API_VISIBILITY '-DUNITY_WEAK_ATTRIBUTE=__attribute__((weak))' -DCJSON_IMPORT_SYMBOLS -MD -MQ subprojects/cJSON-1.7.18/tests/parse_with_opts.p/parse_with_opts.c.o -MF subprojects/cJSON-1.7.18/tests/parse_with_opts.p/parse_with_opts.c.o.d -o subprojects/cJSON-1.7.18/tests/parse_with_opts.p/parse_with_opts.c.o -c ../subprojects/cJSON-1.7.18/tests/parse_with_opts.c",
+    "file": "../subprojects/cJSON-1.7.18/tests/parse_with_opts.c",
+    "output": "subprojects/cJSON-1.7.18/tests/parse_with_opts.p/parse_with_opts.c.o"
+  },
+  {
+    "directory": "/home/crash/Projects/nostr/build",
+    "command": "cc -Isubprojects/cJSON-1.7.18/tests/print_array.p -Isubprojects/cJSON-1.7.18/tests -I../subprojects/cJSON-1.7.18/tests -Isubprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/tests/unity/src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -g -DCJSON_EXPORT_SYMBOLS -DCJSON_API_VISIBILITY '-DUNITY_WEAK_ATTRIBUTE=__attribute__((weak))' -DCJSON_IMPORT_SYMBOLS -MD -MQ subprojects/cJSON-1.7.18/tests/print_array.p/print_array.c.o -MF subprojects/cJSON-1.7.18/tests/print_array.p/print_array.c.o.d -o subprojects/cJSON-1.7.18/tests/print_array.p/print_array.c.o -c ../subprojects/cJSON-1.7.18/tests/print_array.c",
+    "file": "../subprojects/cJSON-1.7.18/tests/print_array.c",
+    "output": "subprojects/cJSON-1.7.18/tests/print_array.p/print_array.c.o"
+  },
+  {
+    "directory": "/home/crash/Projects/nostr/build",
+    "command": "cc -Isubprojects/cJSON-1.7.18/tests/print_number.p -Isubprojects/cJSON-1.7.18/tests -I../subprojects/cJSON-1.7.18/tests -Isubprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/tests/unity/src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -g -DCJSON_EXPORT_SYMBOLS -DCJSON_API_VISIBILITY '-DUNITY_WEAK_ATTRIBUTE=__attribute__((weak))' -DCJSON_IMPORT_SYMBOLS -MD -MQ subprojects/cJSON-1.7.18/tests/print_number.p/print_number.c.o -MF subprojects/cJSON-1.7.18/tests/print_number.p/print_number.c.o.d -o subprojects/cJSON-1.7.18/tests/print_number.p/print_number.c.o -c ../subprojects/cJSON-1.7.18/tests/print_number.c",
+    "file": "../subprojects/cJSON-1.7.18/tests/print_number.c",
+    "output": "subprojects/cJSON-1.7.18/tests/print_number.p/print_number.c.o"
+  },
+  {
+    "directory": "/home/crash/Projects/nostr/build",
+    "command": "cc -Isubprojects/cJSON-1.7.18/tests/print_object.p -Isubprojects/cJSON-1.7.18/tests -I../subprojects/cJSON-1.7.18/tests -Isubprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/tests/unity/src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -g -DCJSON_EXPORT_SYMBOLS -DCJSON_API_VISIBILITY '-DUNITY_WEAK_ATTRIBUTE=__attribute__((weak))' -DCJSON_IMPORT_SYMBOLS -MD -MQ subprojects/cJSON-1.7.18/tests/print_object.p/print_object.c.o -MF subprojects/cJSON-1.7.18/tests/print_object.p/print_object.c.o.d -o subprojects/cJSON-1.7.18/tests/print_object.p/print_object.c.o -c ../subprojects/cJSON-1.7.18/tests/print_object.c",
+    "file": "../subprojects/cJSON-1.7.18/tests/print_object.c",
+    "output": "subprojects/cJSON-1.7.18/tests/print_object.p/print_object.c.o"
+  },
+  {
+    "directory": "/home/crash/Projects/nostr/build",
+    "command": "cc -Isubprojects/cJSON-1.7.18/tests/print_string.p -Isubprojects/cJSON-1.7.18/tests -I../subprojects/cJSON-1.7.18/tests -Isubprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/tests/unity/src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -g -DCJSON_EXPORT_SYMBOLS -DCJSON_API_VISIBILITY '-DUNITY_WEAK_ATTRIBUTE=__attribute__((weak))' -DCJSON_IMPORT_SYMBOLS -MD -MQ subprojects/cJSON-1.7.18/tests/print_string.p/print_string.c.o -MF subprojects/cJSON-1.7.18/tests/print_string.p/print_string.c.o.d -o subprojects/cJSON-1.7.18/tests/print_string.p/print_string.c.o -c ../subprojects/cJSON-1.7.18/tests/print_string.c",
+    "file": "../subprojects/cJSON-1.7.18/tests/print_string.c",
+    "output": "subprojects/cJSON-1.7.18/tests/print_string.p/print_string.c.o"
+  },
+  {
+    "directory": "/home/crash/Projects/nostr/build",
+    "command": "cc -Isubprojects/cJSON-1.7.18/tests/print_value.p -Isubprojects/cJSON-1.7.18/tests -I../subprojects/cJSON-1.7.18/tests -Isubprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/tests/unity/src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -g -DCJSON_EXPORT_SYMBOLS -DCJSON_API_VISIBILITY '-DUNITY_WEAK_ATTRIBUTE=__attribute__((weak))' -DCJSON_IMPORT_SYMBOLS -MD -MQ subprojects/cJSON-1.7.18/tests/print_value.p/print_value.c.o -MF subprojects/cJSON-1.7.18/tests/print_value.p/print_value.c.o.d -o subprojects/cJSON-1.7.18/tests/print_value.p/print_value.c.o -c ../subprojects/cJSON-1.7.18/tests/print_value.c",
+    "file": "../subprojects/cJSON-1.7.18/tests/print_value.c",
+    "output": "subprojects/cJSON-1.7.18/tests/print_value.p/print_value.c.o"
+  },
+  {
+    "directory": "/home/crash/Projects/nostr/build",
+    "command": "cc -Isubprojects/cJSON-1.7.18/tests/readme_examples.p -Isubprojects/cJSON-1.7.18/tests -I../subprojects/cJSON-1.7.18/tests -Isubprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/tests/unity/src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -g -DCJSON_EXPORT_SYMBOLS -DCJSON_API_VISIBILITY '-DUNITY_WEAK_ATTRIBUTE=__attribute__((weak))' -DCJSON_IMPORT_SYMBOLS -MD -MQ subprojects/cJSON-1.7.18/tests/readme_examples.p/readme_examples.c.o -MF subprojects/cJSON-1.7.18/tests/readme_examples.p/readme_examples.c.o.d -o subprojects/cJSON-1.7.18/tests/readme_examples.p/readme_examples.c.o -c ../subprojects/cJSON-1.7.18/tests/readme_examples.c",
+    "file": "../subprojects/cJSON-1.7.18/tests/readme_examples.c",
+    "output": "subprojects/cJSON-1.7.18/tests/readme_examples.p/readme_examples.c.o"
+  },
+  {
+    "directory": "/home/crash/Projects/nostr/build",
+    "command": "c++ -Iserver.p -I. -I.. -Isubprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/include-workaround-meson -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -g -DCJSON_IMPORT_SYMBOLS -MD -MQ server.p/src_server.cpp.o -MF server.p/src_server.cpp.o.d -o server.p/src_server.cpp.o -c ../src/server.cpp",
+    "file": "../src/server.cpp",
+    "output": "server.p/src_server.cpp.o"
+  },
+  {
+    "directory": "/home/crash/Projects/nostr/build",
+    "command": "c++ -Iclient.p -I. -I.. -Isubprojects/cJSON-1.7.18/include-workaround-meson -I../subprojects/cJSON-1.7.18/include-workaround-meson -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -g -DCJSON_IMPORT_SYMBOLS -MD -MQ client.p/src_client.cpp.o -MF client.p/src_client.cpp.o.d -o client.p/src_client.cpp.o -c ../src/client.cpp",
+    "file": "../src/client.cpp",
+    "output": "client.p/src_client.cpp.o"
+  }
 ]

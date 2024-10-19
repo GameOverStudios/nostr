@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/crash/nostr",
-      "program": "/home/crash/nostr/build/Debug/outDebug",
+      "cwd": "/home/crash/Projects/nostr",
+      "program": "/home/crash/Projects/nostr/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

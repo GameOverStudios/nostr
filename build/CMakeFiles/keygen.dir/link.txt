@@ -1,2 +1,0 @@
-/usr/bin/ar qc libkeygen.a CMakeFiles/keygen.dir/src/keygen.cpp.o
-/usr/bin/ranlib libkeygen.a

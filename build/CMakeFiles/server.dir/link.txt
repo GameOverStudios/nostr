@@ -1,1 +1,0 @@
-/usr/bin/g++ CMakeFiles/server.dir/src/nostr_server.cpp.o CMakeFiles/server.dir/src/event.cpp.o CMakeFiles/server.dir/src/database.cpp.o -o server  /usr/lib/x86_64-linux-gnu/libsqlite3.so ../externals/openssl-3.3.2/libssl.a ../externals/openssl-3.3.2/libcrypto.a -lsqlite3 

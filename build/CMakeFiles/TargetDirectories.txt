@@ -1,5 +1,0 @@
-/home/crash/nostr/build/CMakeFiles/server.dir
-/home/crash/nostr/build/CMakeFiles/client.dir
-/home/crash/nostr/build/CMakeFiles/keygen.dir
-/home/crash/nostr/build/CMakeFiles/edit_cache.dir
-/home/crash/nostr/build/CMakeFiles/rebuild_cache.dir
