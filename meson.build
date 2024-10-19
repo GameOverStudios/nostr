@@ -1,6 +1,7 @@
-# meson.build
+# meson setup build
+# cd build && meson compile
 
-project('nostr', 'cpp',  # Mudando 'c' para 'cpp' já que você está usando C++
+project('nostr', 'cpp',
   version : '0.1',
   default_options : ['warning_level=3'])
 
