@@ -111,71 +111,11 @@ CMakeFiles/client.dir/src/database.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/src/database.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/crash/nostr/src/database.cpp -o CMakeFiles/client.dir/src/database.cpp.s
 
-CMakeFiles/client.dir/src/crypto.cpp.o: CMakeFiles/client.dir/flags.make
-CMakeFiles/client.dir/src/crypto.cpp.o: ../src/crypto.cpp
-CMakeFiles/client.dir/src/crypto.cpp.o: CMakeFiles/client.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/crash/nostr/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/client.dir/src/crypto.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client.dir/src/crypto.cpp.o -MF CMakeFiles/client.dir/src/crypto.cpp.o.d -o CMakeFiles/client.dir/src/crypto.cpp.o -c /home/crash/nostr/src/crypto.cpp
-
-CMakeFiles/client.dir/src/crypto.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/src/crypto.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/crash/nostr/src/crypto.cpp > CMakeFiles/client.dir/src/crypto.cpp.i
-
-CMakeFiles/client.dir/src/crypto.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/src/crypto.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/crash/nostr/src/crypto.cpp -o CMakeFiles/client.dir/src/crypto.cpp.s
-
-CMakeFiles/client.dir/src/log.cpp.o: CMakeFiles/client.dir/flags.make
-CMakeFiles/client.dir/src/log.cpp.o: ../src/log.cpp
-CMakeFiles/client.dir/src/log.cpp.o: CMakeFiles/client.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/crash/nostr/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/client.dir/src/log.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client.dir/src/log.cpp.o -MF CMakeFiles/client.dir/src/log.cpp.o.d -o CMakeFiles/client.dir/src/log.cpp.o -c /home/crash/nostr/src/log.cpp
-
-CMakeFiles/client.dir/src/log.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/src/log.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/crash/nostr/src/log.cpp > CMakeFiles/client.dir/src/log.cpp.i
-
-CMakeFiles/client.dir/src/log.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/src/log.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/crash/nostr/src/log.cpp -o CMakeFiles/client.dir/src/log.cpp.s
-
-CMakeFiles/client.dir/src/auth.cpp.o: CMakeFiles/client.dir/flags.make
-CMakeFiles/client.dir/src/auth.cpp.o: ../src/auth.cpp
-CMakeFiles/client.dir/src/auth.cpp.o: CMakeFiles/client.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/crash/nostr/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/client.dir/src/auth.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client.dir/src/auth.cpp.o -MF CMakeFiles/client.dir/src/auth.cpp.o.d -o CMakeFiles/client.dir/src/auth.cpp.o -c /home/crash/nostr/src/auth.cpp
-
-CMakeFiles/client.dir/src/auth.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/src/auth.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/crash/nostr/src/auth.cpp > CMakeFiles/client.dir/src/auth.cpp.i
-
-CMakeFiles/client.dir/src/auth.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/src/auth.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/crash/nostr/src/auth.cpp -o CMakeFiles/client.dir/src/auth.cpp.s
-
-CMakeFiles/client.dir/src/uuid.cpp.o: CMakeFiles/client.dir/flags.make
-CMakeFiles/client.dir/src/uuid.cpp.o: ../src/uuid.cpp
-CMakeFiles/client.dir/src/uuid.cpp.o: CMakeFiles/client.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/crash/nostr/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/client.dir/src/uuid.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client.dir/src/uuid.cpp.o -MF CMakeFiles/client.dir/src/uuid.cpp.o.d -o CMakeFiles/client.dir/src/uuid.cpp.o -c /home/crash/nostr/src/uuid.cpp
-
-CMakeFiles/client.dir/src/uuid.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/src/uuid.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/crash/nostr/src/uuid.cpp > CMakeFiles/client.dir/src/uuid.cpp.i
-
-CMakeFiles/client.dir/src/uuid.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/src/uuid.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/crash/nostr/src/uuid.cpp -o CMakeFiles/client.dir/src/uuid.cpp.s
-
 # Object files for target client
 client_OBJECTS = \
 "CMakeFiles/client.dir/src/nostr_client.cpp.o" \
 "CMakeFiles/client.dir/src/event.cpp.o" \
-"CMakeFiles/client.dir/src/database.cpp.o" \
-"CMakeFiles/client.dir/src/crypto.cpp.o" \
-"CMakeFiles/client.dir/src/log.cpp.o" \
-"CMakeFiles/client.dir/src/auth.cpp.o" \
-"CMakeFiles/client.dir/src/uuid.cpp.o"
+"CMakeFiles/client.dir/src/database.cpp.o"
 
 # External object files for target client
 client_EXTERNAL_OBJECTS =
@@ -183,15 +123,12 @@ client_EXTERNAL_OBJECTS =
 client: CMakeFiles/client.dir/src/nostr_client.cpp.o
 client: CMakeFiles/client.dir/src/event.cpp.o
 client: CMakeFiles/client.dir/src/database.cpp.o
-client: CMakeFiles/client.dir/src/crypto.cpp.o
-client: CMakeFiles/client.dir/src/log.cpp.o
-client: CMakeFiles/client.dir/src/auth.cpp.o
-client: CMakeFiles/client.dir/src/uuid.cpp.o
 client: CMakeFiles/client.dir/build.make
 client: ../externals/openssl-3.3.2/libssl.a
 client: ../externals/openssl-3.3.2/libcrypto.a
+client: libkeygen.a
 client: CMakeFiles/client.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/crash/nostr/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/crash/nostr/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable client"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/client.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

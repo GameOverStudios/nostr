@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/crash/nostr/externals/asio-1.30.2/include -I/home/crash/nostr/externals/openssl-3.3.2/include -I/home/crash/nostr/externals/cereal/include -I/home/crash/nostr/externals/sqlite/libsqlite3
 
-CXX_FLAGS = -g -std=gnu++11
+CXX_FLAGS = -std=gnu++11
 

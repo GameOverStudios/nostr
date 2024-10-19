@@ -142,59 +142,18 @@ client/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
 .PHONY : client/fast
 
-src/auth.o: src/auth.cpp.o
-.PHONY : src/auth.o
+#=============================================================================
+# Target rules for targets named keygen
 
-# target to build an object file
-src/auth.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/auth.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/auth.cpp.o
-.PHONY : src/auth.cpp.o
+# Build rule for target.
+keygen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 keygen
+.PHONY : keygen
 
-src/auth.i: src/auth.cpp.i
-.PHONY : src/auth.i
-
-# target to preprocess a source file
-src/auth.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/auth.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/auth.cpp.i
-.PHONY : src/auth.cpp.i
-
-src/auth.s: src/auth.cpp.s
-.PHONY : src/auth.s
-
-# target to generate assembly for a file
-src/auth.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/auth.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/auth.cpp.s
-.PHONY : src/auth.cpp.s
-
-src/crypto.o: src/crypto.cpp.o
-.PHONY : src/crypto.o
-
-# target to build an object file
-src/crypto.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/crypto.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/crypto.cpp.o
-.PHONY : src/crypto.cpp.o
-
-src/crypto.i: src/crypto.cpp.i
-.PHONY : src/crypto.i
-
-# target to preprocess a source file
-src/crypto.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/crypto.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/crypto.cpp.i
-.PHONY : src/crypto.cpp.i
-
-src/crypto.s: src/crypto.cpp.s
-.PHONY : src/crypto.s
-
-# target to generate assembly for a file
-src/crypto.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/crypto.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/crypto.cpp.s
-.PHONY : src/crypto.cpp.s
+# fast build rule for target.
+keygen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keygen.dir/build.make CMakeFiles/keygen.dir/build
+.PHONY : keygen/fast
 
 src/database.o: src/database.cpp.o
 .PHONY : src/database.o
@@ -250,32 +209,29 @@ src/event.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/event.cpp.s
 .PHONY : src/event.cpp.s
 
-src/log.o: src/log.cpp.o
-.PHONY : src/log.o
+src/keygen.o: src/keygen.cpp.o
+.PHONY : src/keygen.o
 
 # target to build an object file
-src/log.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/log.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/log.cpp.o
-.PHONY : src/log.cpp.o
+src/keygen.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keygen.dir/build.make CMakeFiles/keygen.dir/src/keygen.cpp.o
+.PHONY : src/keygen.cpp.o
 
-src/log.i: src/log.cpp.i
-.PHONY : src/log.i
+src/keygen.i: src/keygen.cpp.i
+.PHONY : src/keygen.i
 
 # target to preprocess a source file
-src/log.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/log.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/log.cpp.i
-.PHONY : src/log.cpp.i
+src/keygen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keygen.dir/build.make CMakeFiles/keygen.dir/src/keygen.cpp.i
+.PHONY : src/keygen.cpp.i
 
-src/log.s: src/log.cpp.s
-.PHONY : src/log.s
+src/keygen.s: src/keygen.cpp.s
+.PHONY : src/keygen.s
 
 # target to generate assembly for a file
-src/log.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/log.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/log.cpp.s
-.PHONY : src/log.cpp.s
+src/keygen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keygen.dir/build.make CMakeFiles/keygen.dir/src/keygen.cpp.s
+.PHONY : src/keygen.cpp.s
 
 src/nostr_client.o: src/nostr_client.cpp.o
 .PHONY : src/nostr_client.o
@@ -325,33 +281,6 @@ src/nostr_server.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/nostr_server.cpp.s
 .PHONY : src/nostr_server.cpp.s
 
-src/uuid.o: src/uuid.cpp.o
-.PHONY : src/uuid.o
-
-# target to build an object file
-src/uuid.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/uuid.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/uuid.cpp.o
-.PHONY : src/uuid.cpp.o
-
-src/uuid.i: src/uuid.cpp.i
-.PHONY : src/uuid.i
-
-# target to preprocess a source file
-src/uuid.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/uuid.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/uuid.cpp.i
-.PHONY : src/uuid.cpp.i
-
-src/uuid.s: src/uuid.cpp.s
-.PHONY : src/uuid.s
-
-# target to generate assembly for a file
-src/uuid.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/uuid.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/uuid.cpp.s
-.PHONY : src/uuid.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -361,31 +290,23 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... client"
+	@echo "... keygen"
 	@echo "... server"
-	@echo "... src/auth.o"
-	@echo "... src/auth.i"
-	@echo "... src/auth.s"
-	@echo "... src/crypto.o"
-	@echo "... src/crypto.i"
-	@echo "... src/crypto.s"
 	@echo "... src/database.o"
 	@echo "... src/database.i"
 	@echo "... src/database.s"
 	@echo "... src/event.o"
 	@echo "... src/event.i"
 	@echo "... src/event.s"
-	@echo "... src/log.o"
-	@echo "... src/log.i"
-	@echo "... src/log.s"
+	@echo "... src/keygen.o"
+	@echo "... src/keygen.i"
+	@echo "... src/keygen.s"
 	@echo "... src/nostr_client.o"
 	@echo "... src/nostr_client.i"
 	@echo "... src/nostr_client.s"
 	@echo "... src/nostr_server.o"
 	@echo "... src/nostr_server.i"
 	@echo "... src/nostr_server.s"
-	@echo "... src/uuid.o"
-	@echo "... src/uuid.i"
-	@echo "... src/uuid.s"
 .PHONY : help
 
 
