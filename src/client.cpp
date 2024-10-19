@@ -1,30 +1,47 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <cjson/cJSON.h>
+#include <boost/asio.hpp>
+#include <iostream>
+#include <nlohmann/json.hpp>  // Usaremos a biblioteca JSON para criar eventos Nostr
 
-#define PROJECT_NAME "client"
+using boost::asio::ip::tcp;
+using json = nlohmann::json;
 
-int main(int argc, char **argv) {
-    if(argc != 1) {
-        printf("%s takes no arguments.\n", argv[0]);
-        return 1;
+int main() {
+    try {
+        boost::asio::io_context io_context;
+        tcp::resolver resolver(io_context);
+        auto endpoints = resolver.resolve("127.0.0.1", "8080");
+
+        tcp::socket socket(io_context);
+        boost::asio::connect(socket, endpoints);
+
+        // Criar um evento Nostr de exemplo (NIP-01)
+        json event = {
+            {"id", "abc123"},
+            {"pubkey", "public_key_value"},
+            {"created_at", 1692894000},
+            {"kind", 1},  // tipo do evento
+            {"tags", json::array()},
+            {"content", "Olá, este é um evento Nostr!"}
+        };
+
+        std::string message = event.dump();
+
+        // Enviar o evento ao servidor
+        boost::asio::write(socket, boost::asio::buffer(message));
+
+        // Receber a resposta do servidor
+        char reply[1024];
+        boost::system::error_code error;
+        size_t reply_length = socket.read_some(boost::asio::buffer(reply), error);
+
+        if (error)
+            throw boost::system::system_error(error);
+
+        std::cout << "Resposta do servidor: " << std::string(reply, reply_length) << std::endl;
+
+    } catch (std::exception& e) {
+        std::cerr << "Erro: " << e.what() << std::endl;
     }
-    printf("This is project %s.\n", PROJECT_NAME);
-
-
-    // Criar um objeto JSON
-    cJSON *root = cJSON_CreateObject();
-    cJSON_AddStringToObject(root, "name", "OpenAI");
-    cJSON_AddNumberToObject(root, "age", 5);
-    
-    // Serializar o objeto JSON
-    char *json_string = cJSON_Print(root);
-    printf("JSON output:\n%s\n", json_string);
-    
-    // Liberar memória
-    cJSON_Delete(root);
-    free(json_string);  // Agora a função free será reconhecida
-
 
     return 0;
 }
