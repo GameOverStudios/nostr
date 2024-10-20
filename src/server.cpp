@@ -3,37 +3,16 @@
 #include <vector>
 #include <map>
 #include <boost/asio.hpp>
-#include <openssl/evp.h>
-#include <openssl/ec.h>
-#include <openssl/pem.h>
-#include <openssl/err.h>
-#include <openssl/objects.h>
-#include <openssl/core_names.h>
 #include <nlohmann/json.hpp>
-#include <sqlite3.h>
+#include <sqlite3.h> // Ou outro mecanismo de persistência, se necessário
 #include <iomanip>
 #include <sstream>
-#include <iostream>
-#include <thread>
-#include <openssl/evp.h>
-#include <openssl/ec.h>
-#include <openssl/err.h>
-#include <openssl/objects.h>
-#include <openssl/core_names.h>
-#include <vector>
-#include <string>
-#include <iostream>
-#include <openssl/params.h> // Inclua para OSSL_PARAM
 #include <secp256k1.h>
-#include <secp256k1_recovery.h> // Para assinaturas com recuperação
-#include <iostream>
-#include <vector>
-#include <boost/asio.hpp>
+#include <secp256k1_recovery.h>
 
 using boost::asio::ip::tcp;
 using json = nlohmann::json;
 
-// Função auxiliar para converter string hexadecimal em array de bytes
 std::vector<unsigned char> hex_string_to_bytes(const std::string& hex_str) {
     std::vector<unsigned char> bytes;
     for (unsigned int i = 0; i < hex_str.length(); i += 2) {
@@ -44,65 +23,80 @@ std::vector<unsigned char> hex_string_to_bytes(const std::string& hex_str) {
     return bytes;
 }
 
-// Classe para representar um evento Nostr
-class NostrEvent {
-public:
-    int kind;
-    std::string pubkey;
-    std::string content;
-    std::string id;
-    std::vector<std::vector<std::string>> tags;
-    std::string sig;
-    long created_at;
+std::string bytes_to_hex_string(const unsigned char *bytes, size_t len) {
+    std::stringstream ss;
+    ss << std::hex << std::setfill('0');
+    for (size_t i = 0; i < len; ++i) {
+        ss << std::setw(2) << static_cast<int>(bytes[i]);
+    }
+    return ss.str();
+}
 
-    // Construtor padrão (sem argumentos)
-    NostrEvent() : kind(0), pubkey(""), content(""), id(""), sig(""), created_at(0) {}
+std::string serialize_event_data(const json& event_json) {
+    std::stringstream ss;
+    ss << "[" << event_json["kind"] << ",\"" << event_json["pubkey"] << "\",\"" << event_json["content"] << "\",";
 
-    NostrEvent(const json& event_json) {
-        kind = event_json["kind"];
-        pubkey = event_json["pubkey"];
-        content = event_json["content"];
-        id = event_json["id"];
-
-        if (event_json.contains("tags") && event_json["tags"].is_array()) {
-            for (const auto& tag_array : event_json["tags"]) {
-                std::vector<std::string> tag_vec;
-                for (const auto& tag_item : tag_array) {
-                    tag_vec.push_back(tag_item.get<std::string>());
+    // Serializar as tags
+    ss << "[";
+    if (event_json.contains("tags") && event_json["tags"].is_array()) {
+        for (size_t i = 0; i < event_json["tags"].size(); ++i) {
+            ss << "[";
+            for (size_t j = 0; j < event_json["tags"][i].size(); ++j) {
+                ss << "\"" << event_json["tags"][i][j].get<std::string>() << "\"";
+                if (j < event_json["tags"][i].size() - 1) {
+                    ss << ",";
                 }
-                tags.push_back(tag_vec);
+            }
+            ss << "]";
+            if (i < event_json["tags"].size() - 1) {
+                ss << ",";
             }
         }
+    }
+    ss << "],";
+    ss << event_json["created_at"] << "]";
 
-        sig = event_json["sig"];
+    return ss.str();
+}
 
-        if (event_json.contains("created_at"))
-            created_at = event_json["created_at"];
+bool verify_event_signature(const json& event_json) {
+    // 1. Inicializar o contexto secp256k1
+    secp256k1_context *ctx = secp256k1_context_create(SECP256K1_CONTEXT_VERIFY);
+
+
+    // 2. Converter a chave pública (pubkey) para o formato secp256k1
+    secp256k1_pubkey pubkey_secp256k1;
+     if (!secp256k1_ec_pubkey_parse(ctx, &pubkey_secp256k1, hex_string_to_bytes(event_json["pubkey"]).data(), event_json["pubkey"].get<std::string>().length()/2)) {
+        std::cerr << "Erro ao analisar a chave pública." << std::endl;
+        secp256k1_context_destroy(ctx);
+        return false;
     }
 
-    
 
-    json to_json() const {
-        json event_json;
-        event_json["kind"] = kind;
-        event_json["pubkey"] = pubkey;
-        event_json["content"] = content;
-        event_json["id"] = id;
-        event_json["tags"] = tags;
-        event_json["sig"] = sig;
+    // 3. Converter a assinatura (sig) para o formato secp256k1
+    secp256k1_ecdsa_signature signature_secp256k1;
 
-        if (created_at != 0)
-            event_json["created_at"] = created_at;
-
-        return event_json;
+     if (!secp256k1_ecdsa_signature_parse_compact(ctx, &signature_secp256k1, hex_string_to_bytes(event_json["sig"]).data())) {
+       std::cerr << "Erro ao analisar a assinatura." << std::endl;
+        secp256k1_context_destroy(ctx);
+       return false;
     }
-};
 
-// Mapa para armazenar os eventos recebidos (chave: ID do evento)
-std::map<std::string, NostrEvent> event_store;
+    // 4. Serializar os dados do evento (sem a assinatura)
+    std::string serialized_data = serialize_event_data(event_json);
 
-// Função para lidar com cada conexão de cliente
-// Função para verificar a chave pública recebida do cliente
+
+    // 5. Verificar a assinatura
+    if (secp256k1_ecdsa_verify(ctx, &signature_secp256k1, (const unsigned char*)serialized_data.data(), &pubkey_secp256k1) != 1) {
+         std::cerr << "Assinatura do evento inválida!" << std::endl;
+        secp256k1_context_destroy(ctx);
+        return false;
+    }
+
+    secp256k1_context_destroy(ctx); // Destruir o contexto após o uso
+    return true;
+}
+
 bool verify_pubkey(const std::string& pubkey) {
     // 1. Inicializar o contexto secp256k1
     secp256k1_context *ctx = secp256k1_context_create(SECP256K1_CONTEXT_VERIFY);
@@ -125,8 +119,6 @@ bool verify_pubkey(const std::string& pubkey) {
     return true; // Chave pública válida
 }
 
-
-// Função para lidar com cada conexão de cliente
 void session(tcp::socket socket) {
     try {
         while (true) {
@@ -158,8 +150,6 @@ void session(tcp::socket socket) {
     }
 }
 
-
-// Função principal do servidor
 int main() {
     try {
         boost::asio::io_context io_context;
@@ -170,7 +160,7 @@ int main() {
         while (true) {
             tcp::socket socket(io_context);
             acceptor.accept(socket);
-            std::thread(session, std::move(socket)).detach(); // Inicia uma nova thread para cada cliente
+            std::thread(session, std::move(socket)).detach();
         }
     } catch (std::exception& e) {
         std::cerr << "Erro do servidor: " << e.what() << std::endl;
