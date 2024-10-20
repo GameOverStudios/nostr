@@ -1,71 +1,79 @@
-#include <boost/asio.hpp>
 #include <iostream>
 #include <thread>
 #include <vector>
-#include <nlohmann/json.hpp>  // Usaremos a biblioteca JSON para processar os eventos Nostr
+#include <boost/asio.hpp>
+#include <openssl/evp.h>
+#include <openssl/ec.h>
+#include <openssl/pem.h>
+#include <openssl/err.h>
 
 using boost::asio::ip::tcp;
-using json = nlohmann::json;
 
-void handle_client(tcp::socket socket) {
+// Função para gerar chaves pública e privada
+std::pair<std::string, std::string> generate_keypair() {
+    // Criação do contexto para chaves EC
+    EVP_PKEY_CTX* pctx = EVP_PKEY_CTX_new_id(EVP_PKEY_EC, nullptr);
+    EVP_PKEY* pkey = nullptr;
+
+    // Geração da chave
+    if (EVP_PKEY_keygen_init(pctx) <= 0 || 
+        EVP_PKEY_CTX_set_ec_paramgen_curve_nid(pctx, NID_secp256k1) <= 0 || 
+        EVP_PKEY_keygen(pctx, &pkey) <= 0) {
+        EVP_PKEY_CTX_free(pctx);
+        throw std::runtime_error("Erro ao gerar a chave EC");
+    }
+    EVP_PKEY_CTX_free(pctx);
+
+    // Geração da chave privada
+    BIO* private_bio = BIO_new(BIO_s_mem());
+    PEM_write_bio_PrivateKey(private_bio, pkey, nullptr, nullptr, 0, nullptr, nullptr);
+
+    char* private_key = nullptr;
+    long private_key_len = BIO_get_mem_data(private_bio, &private_key);
+    std::string private_key_str(private_key, private_key_len);
+    BIO_free(private_bio);
+
+    // Geração da chave pública
+    BIO* public_bio = BIO_new(BIO_s_mem());
+    PEM_write_bio_PUBKEY(public_bio, pkey);
+
+    char* public_key = nullptr;
+    long public_key_len = BIO_get_mem_data(public_bio, &public_key);
+    std::string public_key_str(public_key, public_key_len);
+    BIO_free(public_bio);
+
+    EVP_PKEY_free(pkey); // Libera a chave
+    return { public_key_str, private_key_str };
+}
+
+// Função para lidar com cada conexão de cliente
+void session(tcp::socket socket) {
     try {
-        while (true) {
-            char data[1024];
-            boost::system::error_code error;
-
-            size_t length = socket.read_some(boost::asio::buffer(data), error);
-            if (error == boost::asio::error::eof)
-                break; // Conexão encerrada pelo cliente
-            else if (error)
-                throw boost::system::system_error(error);
-
-            // Interpretar a mensagem recebida como um evento Nostr
-            std::string received_message(data, length);
-            json event = json::parse(received_message);
-
-            std::cout << "Evento Nostr recebido: " << event.dump() << std::endl;
-
-            // Processar o evento conforme o NIP-01 (estrutura básica de eventos)
-            if (event.contains("id") && event.contains("pubkey") && event.contains("content")) {
-                // Enviar resposta de confirmação para o cliente
-                boost::asio::write(socket, boost::asio::buffer("Evento recebido e validado!\n"));
-            } else {
-                boost::asio::write(socket, boost::asio::buffer("Evento inválido!\n"));
-            }
-        }
+        auto [public_key, private_key] = generate_keypair();
+        
+        // Envia as chaves para o cliente
+        std::string response = "Chave Pública:\n" + public_key + "\nChave Privada:\n" + private_key + "\n";
+        boost::asio::write(socket, boost::asio::buffer(response));
     } catch (std::exception& e) {
         std::cerr << "Erro: " << e.what() << std::endl;
     }
 }
 
+// Função principal do servidor
 int main() {
     try {
         boost::asio::io_context io_context;
-
-        // Configurar o servidor para escutar na porta 8080
         tcp::acceptor acceptor(io_context, tcp::endpoint(tcp::v4(), 8080));
-        std::cout << "Servidor Nostr aguardando conexões..." << std::endl;
 
-        std::vector<std::thread> threads;
+        std::cout << "Servidor Nostr aguardando conexões na porta 8080..." << std::endl;
 
-        // Aceitar múltiplos clientes
         while (true) {
             tcp::socket socket(io_context);
             acceptor.accept(socket);
-
-            // Criar uma nova thread para cada cliente
-            threads.emplace_back(std::thread(handle_client, std::move(socket)));
+            std::thread(session, std::move(socket)).detach(); // Inicia uma nova thread para cada cliente
         }
-
-        // Garantir que todas as threads terminem corretamente
-        for (auto& thread : threads) {
-            if (thread.joinable()) {
-                thread.join();
-            }
-        }
-
     } catch (std::exception& e) {
-        std::cerr << "Erro: " << e.what() << std::endl;
+        std::cerr << "Erro do servidor: " << e.what() << std::endl;
     }
 
     return 0;

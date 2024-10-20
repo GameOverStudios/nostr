@@ -5,6 +5,10 @@ start_server() {
   echo "Iniciando o servidor..."
   build/server &
   SERVER_PID=$!
+  
+  # Aguardar um momento para garantir que o servidor esteja em execução
+  sleep 1
+
   echo "Servidor iniciado com PID: $SERVER_PID"
 }
 
@@ -27,13 +31,21 @@ stop_server_and_clients() {
   
   # Parar clientes
   for pid in "${CLIENT_PID[@]}"; do
-    echo "Parando cliente com PID: $pid"
-    kill $pid 2>/dev/null
+    if kill -0 $pid 2>/dev/null; then
+      echo "Parando cliente com PID: $pid"
+      kill $pid 2>/dev/null
+    else
+      echo "Cliente com PID: $pid já está parado."
+    fi
   done
 
   # Parar servidor
-  echo "Parando o servidor com PID: $SERVER_PID"
-  kill $SERVER_PID 2>/dev/null
+  if kill -0 $SERVER_PID 2>/dev/null; then
+    echo "Parando o servidor com PID: $SERVER_PID"
+    kill $SERVER_PID 2>/dev/null
+  else
+    echo "Servidor com PID: $SERVER_PID já está parado."
+  fi
 }
 
 # Função principal
