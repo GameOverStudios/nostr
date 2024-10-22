@@ -77,14 +77,11 @@ int main() {
             return 1;
         }
 
-
         // Converter assinatura para formato compacto (bytes)
-        unsigned char compact_sig[64];
+        unsigned char compact_sig[64]; 
         secp256k1_ecdsa_signature_serialize_compact(ctx, compact_sig, &signature);
 
         event["sig"] = bytes_to_hex_string(compact_sig, 64); // Assinatura correta
-
-
 
         // Serializar o evento em formato JSON e enviar para o servidor
         std::string event_str = event.dump();
@@ -95,5 +92,6 @@ int main() {
     } catch (std::exception& e) {
         std::cerr << "Erro: " << e.what() << std::endl;
     }
-    return 0;
+
+    return 0; 
 }

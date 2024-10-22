@@ -20,7 +20,7 @@ std::vector<unsigned char> hex_string_to_bytes(const std::string& hex_str) {
         char byte = (char)strtol(byteString.c_str(), nullptr, 16);
         bytes.push_back(byte);
     }
-    return bytes;
+    return bytes; 
 }
 
 std::string bytes_to_hex_string(const unsigned char *bytes, size_t len) {
@@ -102,7 +102,7 @@ bool verify_pubkey(const std::string& pubkey) {
     secp256k1_context *ctx = secp256k1_context_create(SECP256K1_CONTEXT_VERIFY);
     if (!ctx) {
         std::cerr << "Erro ao criar o contexto secp256k1." << std::endl;
-        return false;
+        return false; 
     }
 
     // 2. Converter a chave pública para o formato secp256k1
@@ -116,7 +116,7 @@ bool verify_pubkey(const std::string& pubkey) {
     // 3. Liberar o contexto secp256k1
     secp256k1_context_destroy(ctx);
 
-    return true; // Chave pública válida
+    return true; // Chave pública válida 
 }
 
 void session(tcp::socket socket) {
@@ -151,7 +151,7 @@ void session(tcp::socket socket) {
 }
 
 int main() {
-    try {
+    try { 
         boost::asio::io_context io_context;
         tcp::acceptor acceptor(io_context, tcp::endpoint(tcp::v4(), 8080));
 
@@ -162,9 +162,9 @@ int main() {
             acceptor.accept(socket);
             std::thread(session, std::move(socket)).detach();
         }
-    } catch (std::exception& e) {
+    } catch (std::exception& e) { 
         std::cerr << "Erro do servidor: " << e.what() << std::endl;
     }
 
-    return 0;
+    return 0;  
 }
