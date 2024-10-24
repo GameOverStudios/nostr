@@ -1,4 +1,4 @@
-# sudo apt install libboost-all-dev libsecp256k1-dev
+# sudo apt install libboost-all-dev libsecp256k1-dev libcurl4-openssl-dev
 # meson wrap install sqlite3 asio openssl
 # meson setup build
 # cd build && meson compile

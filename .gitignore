@@ -1,0 +1,4 @@
+subprojects/nlohmann_json-3.11.3
+subprojects/openssl-3.0.8
+subprojects/packagecache
+subprojects/sqlite-amalgamation-3460100
